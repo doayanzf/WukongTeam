@@ -7,8 +7,6 @@ http://www.sqkb.com/?channel=454
 <hr/>
 尹修颖： 9块9包邮、排行榜、
 <br/>
-9块9
-<br/>
 http://www.sqkb.com/k9/?channel=454
 <br/>
 排行榜、
