@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>品牌特卖</title>
+    <script src="jquery.js">
+    </script>
+    
+    <script src="jquery.lazyload.min.js">
+    </script>
+
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        font-family: "helvetica neue","Hiragino Sans GB","冬青黑","Microsoft YaHei","微软雅黑",arial,sans-serif;
+        color: #444;
+        background-color: #f6f6f6;
+      }
+      #header{
+        width: 100%;
+        height: 176px;
+        background: skyblue;
+      }
+      #menu{
+        width: 100%;
+        margin: 0 auto;
+      }
+      #menu-1{
+        width: 1100px;
+        /*position: relative;*/
+        /* margin: 20px 0 auto; */
+        margin-top: 20px;
+        /*left: 160px;*/
+        margin: 20px auto 0 auto;
+      }
+      #tm-title{
+        width: 1100px;
+        height: 44px;
+        background: white;
+        margin-bottom: 12px;
+      }
+      #tm-title i{
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background: url(R.png) center no-repeat;
+        background-size: cover;
+        margin: 0 10px 0 11px;
+        position: relative;
+        top: 8px;
+      }
+      .title-p{
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 44px;
+        color: #FF472B;
+        padding-left: 6px;
+      }
+      .title-h{
+        font-size: 16px;
+        line-height: 44px;
+        color: #666;
+        padding-left: 42px
+      }
+      .content{
+        width: 1098px;
+        height: 238px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        margin: 0 0 12px 242px;
+      }
+      .content-left{
+        float: left;
+        width: 536px;
+        padding: 24px 0 0 30px;
+      }
+      .left-t{
+        height: 126px;
+      }
+      .left-t a{
+        width: 126px;
+        height: 126px;
+        box-shadow: 0 0 1px rgba(0,0,0,.16);
+      }
+      .left-t a img{
+        width:156px;
+        height: 126px;
+      }
+
+      .left-t-r{
+        float: right;
+        width: 310px;
+        padding-left: 25px;
+        position: relative;
+      }
+      .left-t-r span{
+        color: #FF472B;
+        display: block;
+        margin-top:100px;
+      }
+      .left-t-r span:hover{
+        color: red;
+      }
+      .left-t-r-p{
+        font-size: 22px;
+        line-height: 26px;
+        color: #444;
+        font-weight: 700;
+      }
+      .left-t-r-p:hover{
+        color: #707070;
+      }
+      .left-b p{
+        font-size: 16px;
+        line-height: 16px;
+        color: #666;
+        padding-top: 44px;
+      }
+      .content-right{
+        float: right;
+        width: 516px;
+        height: 190px;
+        padding: 25px 16px 0 0;
+      }
+      .content-right1{
+        float: left;
+        width: 160px;
+        height: 190px;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-right: 12px;
+        box-shadow: 0 0 8px rgba(0,0,0,.08);
+      }
+      .content-right1 img{
+        width: 160px;
+        height: 160px;
+      }
+      .content-right1 p{
+        text-align: center;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="box">
+      <!-- 头部 -->
+      <div id="header"></div>
+
+      <!-- 内容 -->
+      <div id="menu">
+        <div id="menu-1">
+          <!-- 主题头 -->
+          <div id="tm-title">
+            <i></i>
+            <span class="title-p">品牌特卖</span>
+            <span class="title-h">品牌好货卷不断</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    $.ajax({
+      url: 'http://10.0.157.237:8888/temai?pageNum=1&pageSize=5',
+
+      type: 'get',
+      dataType: 'json',
+      cache: false,
+      success: function (data) {
+
+        zhangtian(data);
+
+        lazy_a();
+      }
+
+    });
+
+    function zhangtian (data) {
+      var str = '';
+
+        for (var activity_listObj of data.shop_data) {
+
+          str += `<div class=" content">
+            <div class="content-left">
+              <div class="left-t">
+                <a href="#"><img src="1.gif" alt="" data-original="${activity_listObj.brand_logo}" class="lazy"></a>
+                <div class="left-t-r">
+                  <p class="left-t-r-p">${activity_listObj.title}</p>
+                  <span>全部>></span>
+                </div>
+              </div>
+              <div class="left-b">
+                <p >共${activity_listObj.coupon_count}件商品</p>
+              </div>
+            </div>`
+
+            str += `<div class="content-right">`
+          
+            for(var coupon_listObj of activity_listObj.coupon_list){
+              str += `
+                <div class="content-right1">
+                <img src="1.gif" alt="" data-original="${coupon_listObj.thumbnail_pic}" class="lazy">
+                  <p>到手价35.8</p>
+                </div>`
+            }
+            str+=`</div>
+            </div>`
+        }
+
+        $(str).appendTo('#menu');
+    }
+
+    function lazy_a(lan) {
+      $(function() {
+
+          $("img.lazy").lazyload({
+            placeholder : "1.gif",
+            threshold : 200,
+            event : "click",
+            effect : "fadeIn"
+          });
+      })
+    }
+  </script>
+
+  <script type="text/javascript">
+    var ScollN =1;
+
+      $(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '500' && ScollN == 1) {
+          ScollN++;
+          // console.log(`http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=2&pageSize=8`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/temai?pageNum=2&pageSize=5`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+              zhangtian_1(data);
+              lazy_a();
+            }
+          });
+        }
+      })
+
+      $(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '1500' && ScollN == 2) {
+          ScollN++;
+          // console.log(`http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=2&pageSize=8`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/temai?pageNum=3&pageSize=5`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+              zhangtian_1(data);
+              lazy_a();
+            }
+          });
+        }
+      })
+
+      $(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '2500' && ScollN == 3) {
+          ScollN++;
+          // console.log(`http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=2&pageSize=8`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/temai?pageNum=4&pageSize=5`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+              zhangtian_1(data);
+              lazy_a();
+            }
+          });
+        }
+      })
+
+
+    function zhangtian_1 (data) {
+      var str = '';
+
+        for (var activity_listObj of data.shop_data) {
+
+          str += `<div class=" content">
+            <div class="content-left">
+              <div class="left-t">
+                <a href="#"><img src="${activity_listObj.brand_logo}" alt=""></a>
+                <div class="left-t-r">
+                  <p class="left-t-r-p">${activity_listObj.title}</p>
+                  <span>全部>></span>
+                </div>
+              </div>
+              <div class="left-b">
+                <p >共${activity_listObj.coupon_count}件商品</p>
+              </div>
+            </div>`
+
+            str += `<div class="content-right">`
+          
+            for(var coupon_listObj of activity_listObj.coupon_list){
+              str += `
+                <div class="content-right1">
+                  <img src="${coupon_listObj.thumbnail_pic}" alt="">
+                  <p>到手价35.8</p>
+                </div>`
+            }
+            str+=`</div>
+            </div>`
+        }
+
+        $(str).appendTo('#menu');
+    }
+  </script>
+</html>
