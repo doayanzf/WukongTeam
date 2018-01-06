@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>好物</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing:border-box;
+	}
+	#box{
+		width: 1309px;
+		padding-top: 60px;
+		margin: 0 auto;
+	}
+	#head{
+		width: 1309px;
+		height: 60px;
+		position: fixed;
+		top: 0px;
+		background:white;
+	}
+	#bantang{
+		float: left;
+		margin:18px 38px 0 0;
+	}
+	#bantang a{
+		display: block;
+		font-size: 24px;
+		font-weight: bold;
+		width:50px;
+		height: 24px;
+		text-decoration: none;
+		color: #fd6363;
+	}
+	#left{
+		width:500px;
+		height: 44px;
+		float: left;
+		margin-left: 40px;
+	}
+	#left ul li {
+		float: left;
+		list-style:none;
+		position: relative;
+	}
+	#left ul li a{
+		display: block;
+		width:28px;
+		height: 16px;
+		font-size: 14px;
+		color: gray;
+		text-decoration: none;
+		margin:25px 28px 0 10px;
+	}
+	#left ul li:last-of-type a{
+		width:42px;
+	}
+	#left ul li a:hover{
+		color: black;
+		border-bottom: 2px solid #fd6363;
+	}
+		#left ul li a img{
+		position: absolute;
+		left: 50px;
+		top:6px;
+	}
+	#right{
+		width:230px;
+		height: 32px;
+		float: right;
+		margin:13px 40px 0 0;
+		position: relative;
+	}
+	#right input {
+		width:200px;
+		height: 30px;
+		border:  1px solid #bfbfbf;
+		border-radius: 15px;
+		color: #999;
+		padding-left: 30px
+	}
+	#right a{
+		position:absolute;
+		left: 8px;
+		top:6px;
+	}
+	.a{
+		display: block;
+		position: fixed;
+		top:270px;
+		right: 0px;
+		width: 86px;
+		height: 103px;
+	}
+	#body{
+		width:950px;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+	 #nav1{
+		width:950px;
+		height: 74px;
+	}
+	#nav1 ul:after{
+		content: '';
+		display: block;
+		clear:both;
+	}
+	#nav1 ul li {
+		list-style: none;
+		float: left;
+		width:60px;
+		height: 24px;
+		margin: 0 5px 0 5px;
+	}
+	#nav1 ul li a{
+		width:60px;
+		display: block;
+		height: 24px;
+		margin: 20px 10px 0 0;
+		text-align: center;
+		line-height: 22px;
+		text-decoration: none;
+		color: #666;
+		font-size: 14px;
+	}
+	#nav1 ul li a:hover{
+		border: 1px solid red;
+		border-radius: 10px;
+		line-height: 21px;
+		color: red;
+	}
+	#nav2 {
+		width:950px;
+		height: 44px;
+	}
+
+	#nav2 ul li:first-of-type{
+		color: #999;
+		font-size: 12px;
+		margin: 20px 10px 0 0;
+		line-height: 22px;
+		
+	}
+
+	#nav2 ul:first-of-type{
+		display: block;
+	}
+	#nav2 ul li {
+		list-style: none;
+		float: left;
+		width:80px;
+		height: 24px;
+		vertical-align: center
+	}
+	#nav2 ul li a{
+		width:80px;
+		display: block;
+		height: 24px;
+		margin: 20px 10px 0 0;
+		text-align: center;
+		line-height: 22px;
+		text-decoration: none;
+		color: #666;
+		font-size: 12px;
+	}
+	#nav2 ul li a:hover{
+		border: 1px solid red;
+		border-radius: 15px;
+		line-height: 21px;
+		color: red;
+	}
+	#nav2 .b{
+		display: none
+	}
+	#shai ul:first-of-type{
+		float: left;
+		padding-top: 20px
+	}
+	#shai ul:first-of-type li a{
+		display: block;
+		width: 60px;
+		height:40px;
+		line-height: 38px;
+		text-align: center;
+		margin: 0 20px 0 20px
+	}
+	#shai ul:first-of-type li a:hover{
+		border-top:1px solid red;
+		line-height: 36px;
+	}
+	#shai ul li{
+		float: left;
+		list-style: none;
+	}
+	#shai ul li a{
+		color: gray;
+		text-decoration: none;
+	}
+	#shai ul:last-of-type{
+		float: right;
+		padding-top: 35px;
+		font-size: 12px
+	}
+	#shai ul:last-of-type li a{
+		margin:0 10px 0 10px;
+	}
+	#shai ul:last-of-type li a:hover{
+		color: red
+	}
+	#nav3 ul li{
+		width: 220px;
+		list-style: none;
+		padding-top: 20px;
+	}
+	#nav3 ul li a{
+		text-decoration: none;
+	}
+	#nav3 ul li p{
+		width: 220px;
+		font-size: 14px;
+		text-align: center;
+		margin: 10px 0 20px 0;
+		color: gray;
+	}
+	#nav3 ul li span:first-of-type {
+		margin-right: 10px;
+		margin-left: 50px;
+		color: gray;
+	}
+	#nav3 ul li span:last-of-type {
+			margin-left: 10px;
+			color: gray;
+	}
+	#nav3 ul li span:last-of-type img {
+		vertical-align: center;
+		margin-right: 5px
+	}
+	#footer1{
+		margin-top:100px;
+		width:1309px;
+		height: 200px;
+		background: #666;
+		margin: 0 auto;
+		padding-top:20px;
+		padding-left: 20px;
+		padding-bottom: 10px;
+	}
+	#footer1 ul{
+		float: left;
+		width: 180px;
+		height: 160px;
+		padding-left: 30px;
+		border-left: 1px solid white;
+	}
+	#footer1 ul:nth-of-type(3){
+		width: 500px;
+		height: 160px;
+
+	}
+	#footer1 ul li{
+		font-size: 13px;
+		line-height: 35px;
+		list-style: none;
+	}
+	#footer1 li img{
+		margin-right: 10px;
+		vertical-align: center
+	}
+	#footer1 ul li a{
+		color: white;
+		text-decoration: none;
+	}
+	#footer1 #footright{
+		float:right;
+	}
+	#footright ul{
+		margin-top:30px;
+		border: none
+	}
+	#footright img{
+		margin-top:36px;
+		margin-right: 50px;
+	}
+	#footright li{
+		line-height: 35px;
+		margin-bottom: 8px;
+	}
+	#footer2{
+		width: 1309px;
+		height: 50px;
+		background: black;
+		margin: 0 auto;
+		color: #bfbfbf;
+		font-size: 12px;
+		text-align: center;
+		line-height: 40px;
+	}
+	</style>
+</head>
+<body>
+	<div id = 'head'>
+			<div id = 'left'>
+				<div id = 'bantang'><a href="">半糖</a></div>
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">发现</a></li>
+					<li><a href="">好物</a></li>
+					<li><a href="">优惠券<img src="coupon-icon-1-503e0275d4.png"></a></li>
+				</ul>
+			</div>
+			<div id = 'right'>
+				<input type="text" placeholder ='搜索你想要的' style = 'overflow: initial'>
+				<a href=""><img src="sprites@x2-a5f96ad0bb_02.gif" alt=""></a>
+			</div>
+		</div>
+		<div id = 'box'>
+		<div id = 'banner'>
+				<a class='a' href=""><img src="coupon-icon-2-39ac4b9013.png" alt=""></a>
+			</div>
+			<div id = 'body'>
+				<div id = 'nav1'>
+					<ul>
+						<li><a class= 'ab' href="">美妆</a></li>
+						<li><a class= 'ab' href="">个护</a></li>
+						<li><a class= 'ab' href="">食品</a></li>
+						<li><a class= 'ab' href="">生活</a></li>
+						<li><a class= 'ab' href="">数码</a></li>
+						<li><a class= 'ab' href="">办公</a></li>
+						<li><a class= 'ab' href="">鞋包</a></li>
+						<li><a class= 'ab' href="">家电</a></li>
+						<li><a class= 'ab' href="">运动</a></li>
+						<li><a class= 'ab' href="">图书</a></li>
+						<li><a class= 'ab' href="">搭配</a></li>
+					</ul>
+				</div>
+				<div id = 'nav2'>
+					<ul class="b">
+						<li>美妆分类:</li>
+						<li><a href="">面部彩妆</a></li>
+						<li><a href="">眉部彩妆</a></li>
+						<li><a href="">眼部彩妆</a></li>
+						<li><a href="">唇部彩妆</a></li>
+						<li><a href="">美甲护甲</a></li>
+						<li><a href="">香水香氛</a></li>
+						<li><a href="">美妆工具</a></li>
+						<li><a href="">套装礼盒</a></li>
+					</ul>
+					<ul class="b">
+						<li>个户分类:</li>
+						<li><a href="">面部护理</a></li>
+						<li><a href="">眼部护理</a></li>
+						<li><a href="">唇部护理</a></li>
+						<li><a href="">口腔护理</a></li>
+						<li><a href="">身体护理</a></li>
+						<li><a href="">美发护理</a></li>
+						<li><a href="">女性卫生</a></li>
+						<li><a href="">洗护工具</a></li>
+						<li><a href="">其他护理</a></li>
+					</ul>
+				</div>
+				<div id = 'shai'>
+					<ul>
+						<li><a href=""><img src="" alt="">好物</a></li>
+						<li><a href=""><img src="" alt="">晒单</a></li>
+						<li><a href=""><img src="" alt="">文章</a></li>
+					</ul>
+					<ul>
+						<li><a href="">默认</a></li>
+						<li><a href="">最受欢迎</a></li>
+						<li><a href="">价格由低到高</a></li>
+						<li><a href="">价格由高到低</a></li>
+					</ul>
+				</div>
+				<div id = 'nav3'>
+					<ul class="c">
+						<li><a href=""><img src="w300 (1).jpg" alt="">
+						<p>迷魅亮彩口红</p>
+						<span style="font-size:18px">￥226.0</span>
+						<span style="font-size:12px"><img src="sprites@x2-a5f96ad0bb_03.gif" alt="">4</span></a>
+						</li>
+					</ul >
+					<ul class="c">
+						<li><a href=""><img src="w300 (4).jpg" alt="">
+						<p>迷魅亮彩口红</p>
+						<span style="font-size:18px">￥226.0</span>
+						<span style="font-size:12px"><img src="sprites@x2-a5f96ad0bb_03.gif" alt="">4</span></a>
+						</li>
+					</ul>
+					<ul class="c">
+						<li><a href=""><img src="w300.jpg" alt="">
+						<p>迷魅亮彩口红</p>
+						<span style="font-size:18px">￥226.0</span>
+						<span style="font-size:12px"><img src="sprites@x2-a5f96ad0bb_03.gif" alt="">4</span></a>
+						</li>
+					</ul>
+					<ul class="c">
+						<li><a href="">><img src="w300 (2).jpg" alt="">
+						<p>迷魅亮彩口红</p>
+						<span style="font-size:18px">￥226.0</span>
+						<span style="font-size:12px"><img src="sprites@x2-a5f96ad0bb_03.gif" alt="">4</span></a
+						</li>
+					</ul>
+					<ul class="c">
+						<li><a href=""><img src="w300 (3).jpg" alt="">
+						<p>迷魅亮彩口红</p>
+						<span style="font-size:18px">￥226.0</span>
+						<span style="font-size:12px"><img src="sprites@x2-a5f96ad0bb_03.gif" alt="">4</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id = 'footer1'>
+		<ul>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">加入我们</a></li>
+			<li><a href="">联系我们</a></li>
+			<li><a href="">商务合作</a></li>
+		</ul>
+		<ul>
+			<li><a href="">用户反馈</a></li>
+			<li><a href="">投稿</a></li>
+			<li><a href="">关注我们</a></li>
+			<li><a href=""><img src="sprite_03.gif" alt=""><img src="sprites@x2-a5f96ad0bb_04.gif" alt=""></a></li>
+		</ul>
+			<ul>
+			<li>友情链接</li>
+			<li><a href="">京东优评</a>&nbsp;&nbsp;&nbsp;<a href="">申请方</a>&nbsp;&nbsp;&nbsp;<a href="">稀土</a>&nbsp;&nbsp;&nbsp;<a href="">追梦筹</a>&nbsp;&nbsp;&nbsp;<a href="">小猪</a>&nbsp;&nbsp;&nbsp;<a href="">半次元</a>&nbsp;&nbsp;&nbsp;<a href="">微电影</a>&nbsp;&nbsp;&nbsp;<a href="">新片场</a>&nbsp;&nbsp;&nbsp;</li>
+
+			<li><a href="">心上</a>&nbsp;&nbsp;&nbsp;<a href="">家长帮字典</a>&nbsp;&nbsp;&nbsp;<a href="">一下科技</a>&nbsp;&nbsp;&nbsp;<a href="">布卡漫画</a>&nbsp;&nbsp;&nbsp;<a href="">荔枝FM</a>&nbsp;&nbsp;&nbsp;<a href="">在线英语学习</a></li>
+	
+			<li><a href="">特创意设计</a>&nbsp;&nbsp;&nbsp;<a href="">逼格好物</a>&nbsp;&nbsp;&nbsp;<a href="">po校园</a>&nbsp;&nbsp;&nbsp;<a href="">伊人网</a>&nbsp;&nbsp;&nbsp;<a href="">格瓦拉9元</a>&nbsp;&nbsp;&nbsp;<a href="">涨姿势</a>&nbsp;&nbsp;&nbsp;<a href="">展开</a></li>
+		</ul>
+		<div id = "footright">
+			<ul>
+				<li style="font-size: 32px">半糖</li>
+				<li style="font-size: 15px">发现值得买的好东西</li>
+				<li style="font-size: 12px">省钱优惠券</li>
+			</ul>
+			<img src="footer-code.png" alt="">
+		</div>
+	</div>
+	<div id = 'footer2'>地址：北京市东城区箭厂胡同 · 京ICP备14040010号-5 · 半糖 · 发现值得买的好东西</div>
+		</div>
+	<script type="text/javascript">
+	var li = document.getElementsByClassName('ab');
+	var ul = document.getElementsByClassName('b');
+	var img = document.getElementsByClassName('c');
+	var num;
+	for(let i = 0 ; i<li.length; i++) {
+		li[i].onclick = function (e) {
+			for(var n = 0; n<ul.length; n++) {
+				  ul[n].style.display = 'none'
+			}
+			for(var n = 0; n<li.length; n++) {
+			li[n].style.color = '#666';
+			li[n].style.border = 'none';
+		    li[n].style.borderRadius = '0px';
+			}
+			this.style.color = 'red';
+			this.style.border = '1 solid red'
+		    this.style.borderRadius = '15px';
+		    e.returnValue = false;
+		    num = i;
+		    console.log(num)
+		    ul[num].style.display = 'block'
+		    }
+	}
+	var num1;
+	for(let i = 0 ; i<li.length; i++) {
+		li[i].onclick = function (e) {
+			for(var n = 0; n<img.length; n++) {
+				  img[n].style.display = 'none'
+			}
+			for(var n = 0; n<li.length; n++) {
+			li[n].style.color = '#666';
+			li[n].style.border = 'none';
+		    li[n].style.borderRadius = '0px';
+			}
+			this.style.color = 'red';
+			this.style.border = '1 solid red'
+		    this.style.borderRadius = '15px';
+		    e.returnValue = false;
+		    num1 = i;
+		    console.log(num1)
+		    img[num1].style.display = 'block'
+		    }
+	}
+	</script>
+</body>
+</html>

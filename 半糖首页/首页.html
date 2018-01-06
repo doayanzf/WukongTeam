@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <link rel="shortcut icon" type="image/x-icon" href="01.jpg" media="screen" />
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing:border-box;
+	}
+	.a{
+		display: block;
+		position: fixed;
+		top: 180px;
+		right: 0px;
+		width: 86px;
+		height: 103px;
+	}
+	#box{
+		width: 1309px;
+		padding-top: 60px;
+		margin: 0 auto;
+	}
+	li:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+	#box:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+	#head{
+		width: 1309px;
+		height: 60px;
+		position: fixed;
+		top: 0px;
+		background:white;
+	}
+	#bantang{
+		float: left;
+		margin:18px 38px 0 0;
+	}
+	#bantang a{
+		display: block;
+		font-size: 24px;
+		font-weight: bold;
+		width:50px;
+		height: 24px;
+		text-decoration: none;
+		color: #fd6363;
+	}
+	#left{
+		width:500px;
+		height: 44px;
+		float: left;
+		margin-left: 40px;
+	}
+	#left ul li {
+		float: left;
+		list-style:none;
+		position: relative;
+	}
+	#left ul li a{
+		display: block;
+		width:28px;
+		height: 25px;
+		font-size: 14px;
+		color: gray;
+		text-decoration: none;
+		margin:25px 28px 0 10px;
+	}
+	#left ul li:last-of-type a{
+		width:42px;
+	}
+	#left ul li a:hover{
+		color: black;
+		border-bottom: 2px solid #fd6363;
+	}
+		#left ul li a img{
+		position: absolute;
+		left: 50px;
+		top:6px;
+	}
+	#right{
+		width:230px;
+		height: 32px;
+		float: right;
+		margin:13px 40px 0 0;
+		position: relative;
+	}
+	#banner {
+		width: 1309px;
+		height: 340px;
+	}
+	.downloadapp{
+		width: 127px;
+		height: 33px;
+		border-radius: 15px;
+		position: absolute;
+		left: 575px;
+		top:328px;
+	}
+	#right input {
+		width:200px;
+		height: 30px;
+		border:  1px solid #bfbfbf;
+		border-radius: 15px;
+		color: #999;
+		padding-left: 30px
+	}
+	#right a{
+		position:absolute;
+		left: 8px;
+		top:6px;
+	}
+	#tbody{
+		width: 950px;
+		margin: 0 auto;
+	}
+	#tbody ul:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+	#tbody>ul {
+		margin-top:20px;
+	}
+	#tbody>ul li{
+		line-height: 24px;
+		height: 24px;
+		text-align: center;
+		list-style: none;
+		float: left;
+		width:65px;
+		margin:0 10px 15px 0;
+		cursor:pointer;
+		color: #4e4e4e;
+		font-size: 14px;
+		width:65px;
+		height: 24px;
+		text-decoration: none;
+	}
+	#tbody>ul li:hover{
+		background:#fd6363;
+		border-radius: 24px;
+	}
+	
+	#img{
+		width:950px;
+		margin-top: 10px;
+	}
+	#img ul li{
+	float: left;
+	width: 305px;
+	height: 250px;
+	list-style: none;
+	text-align: center;
+
+	}
+	/*#img ul li img:hover{
+		 transform: scale(1.1);
+	}*/
+	#img ul li a{
+		text-decoration: none;
+	}
+	#img p{
+		font-size: 14px;
+		color:#222;
+		width: 300px;
+		height: 33px;
+		line-height: 18px;
+		padding-top: 15px;
+	}
+	#xiaotang1{
+		float: left;
+		font-size: 12px;
+		line-height: 24px;
+		padding-left: 10px;
+		padding-top:16px;
+		color: #999;
+	}
+	#count1{
+		float: right;
+		font-size: 12px;
+		line-height: 24px;
+		margin-top: 18px;
+		color: #999;
+	}
+	#xiaotang1 img{
+			vertical-align: top;
+			margin-right:10px;
+			border-radius: 50%;
+	}
+	
+	#count1 span{
+		margin-left: 10px;
+		margin-right:5px;
+	}
+	
+	#count1 img{
+		margin-left: 15px;
+		vertical-align: center;
+	}
+	
+	#img .ul1{
+		display: block;
+	}
+	#footer1{
+		margin-top:100px;
+		width:1309px;
+		height: 200px;
+		background: #666;
+		margin: 0 auto;
+		padding-top:20px;
+		padding-left: 20px;
+		padding-bottom: 10px;
+	}
+	#footer1 ul{
+		float: left;
+		width: 180px;
+		height: 160px;
+		padding-left: 30px;
+		border-left: 1px solid white;
+	}
+	#footer1 ul:nth-of-type(3){
+		width: 500px;
+		height: 160px;
+
+	}
+	#footer1 ul li{
+		font-size: 13px;
+		line-height: 35px;
+		list-style: none;
+	}
+	#footer1 li img{
+		margin-right: 10px;
+		vertical-align: center
+	}
+	#footer1 ul li a{
+		color: white;
+		text-decoration: none;
+	}
+	#footer1 #footright{
+		float:right;
+	}
+	#footright ul{
+		margin-top:30px;
+		border: none
+	}
+	#footright img{
+		margin-top:36px;
+		margin-right: 50px;
+	}
+	#footright li{
+		line-height: 35px;
+		margin-bottom: 8px;
+	}
+	#footer2{
+		width: 1309px;
+		height: 50px;
+		background: black;
+		margin: 0 auto;
+		color: #bfbfbf;
+		font-size: 12px;
+		text-align: center;
+		line-height: 40px;
+	}
+	</style>
+	<script type="text/javascript" src = 'jquery.js'></script>
+	<script type="text/javascript" src = 'jquery.lazyload.min.js'></script>
+</head>
+<body>
+	<div id = 'head'>
+			<div id = 'left'>
+				<div id = 'bantang'><a href="">半糖</a></div>
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">发现</a></li>
+					<li><a href="">好物</a></li>
+					<li><a href="">优惠券<img src="coupon-icon-1-503e0275d4.png"></a></li>
+				</ul>
+			</div>
+			<div id = 'right'>
+				<input type="text" placeholder = '搜索你想要的'>
+				<a href=""><img src="sprites@x2-a5f96ad0bb_02.gif" alt=""></a>
+			</div>
+		</div>
+	<div id = 'box'>
+			<div id = 'banner'>
+				<img src="banner_20160722.jpg" alt="">
+				<a href="" class="downloadapp"></a>
+				<a class='a' href=""><img src="coupon-icon-2-39ac4b9013.png" alt=""></a>
+			</div>
+		<div id = 'body'>
+			<div id = 'tbody'>
+				<ul>
+					<li >最新</li>
+					<li >礼物</li>
+					<li >美食</li>
+					<li >生活</li>
+					<li >设计感</li>
+					<li >家居</li>
+					<li >数码</li>
+					<li >阅读</li>
+					<li >学生族</li>
+					<li >上班族</li>
+					<li >美妆</li>
+					<li >护理</li>
+					<li >户外运动</li>
+				</ul>
+				<div id = 'img'>
+					
+				</div>
+			</div>
+		</div>
+		<div id = 'footer1'>
+		<ul>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">加入我们</a></li>
+			<li><a href="">联系我们</a></li>
+			<li><a href="">商务合作</a></li>
+		</ul>
+		<ul>
+			<li><a href="">用户反馈</a></li>
+			<li><a href="">投稿</a></li>
+			<li><a href="">关注我们</a></li>
+			<li><a href=""><img src="sprite_03.gif" alt=""><img src="sprites@x2-a5f96ad0bb_04.gif" alt=""></a></li>
+		</ul>
+			<ul>
+			<li>友情链接</li>
+			<li><a href="">京东优评</a>&nbsp;&nbsp;&nbsp;<a href="">申请方</a>&nbsp;&nbsp;&nbsp;<a href="">稀土</a>&nbsp;&nbsp;&nbsp;<a href="">追梦筹</a>&nbsp;&nbsp;&nbsp;<a href="">小猪</a>&nbsp;&nbsp;&nbsp;<a href="">半次元</a>&nbsp;&nbsp;&nbsp;<a href="">微电影</a>&nbsp;&nbsp;&nbsp;<a href="">新片场</a>&nbsp;&nbsp;&nbsp;</li>
+
+			<li><a href="">心上</a>&nbsp;&nbsp;&nbsp;<a href="">家长帮字典</a>&nbsp;&nbsp;&nbsp;<a href="">一下科技</a>&nbsp;&nbsp;&nbsp;<a href="">布卡漫画</a>&nbsp;&nbsp;&nbsp;<a href="">荔枝FM</a>&nbsp;&nbsp;&nbsp;<a href="">在线英语学习</a></li>
+	
+			<li><a href="">特创意设计</a>&nbsp;&nbsp;&nbsp;<a href="">逼格好物</a>&nbsp;&nbsp;&nbsp;<a href="">po校园</a>&nbsp;&nbsp;&nbsp;<a href="">伊人网</a>&nbsp;&nbsp;&nbsp;<a href="">格瓦拉9元</a>&nbsp;&nbsp;&nbsp;<a href="">涨姿势</a>&nbsp;&nbsp;&nbsp;<a href="">展开</a></li>
+		</ul>
+		<div id = "footright">
+			<ul>
+				<li style="font-size: 32px">半糖</li>
+				<li style="font-size: 15px">发现值得买的好东西</li>
+				<li style="font-size: 12px">省钱优惠券</li>
+			</ul>
+			<img src="footer-code.png" alt="">
+		</div>
+	</div>
+	<div id = 'footer2'>地址：北京市东城区箭厂胡同 · 京ICP备14040010号-5 · 半糖 · 发现值得买的好东西</div>
+	</div>
+	<script type="text/javascript">
+	var num = 0;
+	var href = 'btzuixin';
+		$.ajax({
+	url: 'http://10.0.157.237:8888/btzuixin?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+			console.log(data)
+    		var div = $('#img');
+		var str = '';
+			var ul = $('<ul></ul>');
+			div.html(ul)
+			for(var temp of data.shop_data) {
+				var id;
+				id = 'http://www.ibantang.com/topic/' + temp.id;
+				console.log(id)
+					 str += `<li><a href = ${id} ><img src = ${temp.pic} width = '300px' height = '165px'>
+					<p>${temp.title}</p>
+					<div id = 'xiaotang1'><img src = ${temp.user.avatar} width = '24px' height = '24px'><span>${temp.user.nickname}</span></div>
+					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div></a>
+					</li>`
+			}
+		$(str).appendTo(ul);
+		num = 1;
+		href = 'btzuixin'
+	}
+	});
+	
+	$.ajax({
+	url: 'http://10.0.157.237:8888/btzuixin?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+    $('li:eq(4)').on('click', function () {
+    	fn (data, $(this));
+    	lazy_a()
+    	num = 1;
+		href = 'btzuixin'
+    }) 
+	}
+	});
+	
+	$.ajax({
+	url: 'http://10.0.157.237:8888/btliwu?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(5)').on('click', function () {
+		 	fn (data, $(this))
+		 	lazy_a()
+		 	num = 1;
+			href = 'btliwu'
+		 
+	})
+	}
+	});
+
+
+	
+	
+$.ajax({
+	url: 'http://10.0.157.237:8888/meishi?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(6)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'meishi'
+	})
+	}
+	});
+	
+	
+$.ajax({
+	url: 'http://10.0.157.237:8888/btshenghuo?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(7)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'btshenghuo'
+	})
+	}
+	});
+	
+$.ajax({
+	url: 'http://10.0.157.237:8888/btshejigan?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(8)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'btshejigan'
+	})
+	}
+	});
+
+$.ajax({
+	url: 'http://10.0.157.237:8888/btjiaju?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(9)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'btjiaju'
+	})
+	}
+	});
+$.ajax({
+	url: 'http://10.0.157.237:8888/btshuma?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(10)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'btshuma'
+	})
+	}
+	});
+$.ajax({
+	url: 'http://10.0.157.237:8888/btyuedu?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(11)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'btyuedu'
+	})
+	}
+	});
+$.ajax({
+	url: 'http://10.0.157.237:8888/btxueshengdang?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(12)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'btxueshengdang'
+	})
+	}
+	});
+$.ajax({
+	url: 'http://10.0.157.237:8888/btshangbanzu?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(13)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'btshangbanzu'
+	})
+	}
+	});
+$.ajax({
+	url: 'http://10.0.157.237:8888/btmeizhuang?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(14)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'btmeizhuang'
+	})
+	}
+	});
+$.ajax({
+	url: 'http://10.0.157.237:8888/bthuli?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(15)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'bthuli'
+	})
+	}
+	});
+
+$.ajax({
+	url: 'http://10.0.157.237:8888/btyundonghuwai?pageNum=1&pageSize=6',
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		 $('li:eq(16)').on('click', function () {
+		 		fn (data, $(this))
+		 		lazy_a()
+		 		num = 1;
+				href = 'yundonghuwai'
+	})
+	}
+	});
+
+function ajax(url) {
+	$.ajax({
+	url: url,
+	type: 'get',
+	dataType: 'json',
+	cache: false,
+	success: function (data) {
+		var div = $('#img');
+		var str = '';
+			var ul = $('<ul></ul>');
+			ul.appendTo(div)
+			for(var temp of data.shop_data) {
+				console.log(temp)
+				if(temp.user.avatar == undefined) {
+					str += `<li><img src = ${temp.pic} width = '300px' height = '165px'>
+					<p>${temp.title}</p>
+					<div id = 'xiaotang1'><span>${temp.user.nickname}</span></div>
+					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div>
+					</li>`
+				} else {
+					 str += `<li><img src = ${temp.pic} width = '300px' height = '165px'>
+					<p>${temp.title}</p>
+					<div id = 'xiaotang1'><img src = ${temp.user.avatar} width = '24px' height = '24px'><span>${temp.user.nickname}</span></div>
+					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div>
+					</li>`
+				}
+			}
+		$(str).appendTo(ul);
+	}
+ })
+}
+ 	$(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '200' && num == 1) {
+          num++;
+          console.log(`http:/\/10.0.157.237:8888/${href}?pageNum=2&pageSize=6`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/${href}?pageNum=2&pageSize=6`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+             fn2(data);
+             lazy_a()
+            }
+          });
+        }
+      })
+ 	$(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '600' && num == 2) {
+          num++;
+          console.log(`http:/\/10.0.157.237:8888/${href}?pageNum=3&pageSize=6`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/${href}?pageNum=3&pageSize=6`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+             fn2(data);
+             lazy_a()
+            }
+          });
+        }
+      })
+ 	$(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '1000' && num == 3) {
+          num++;
+          console.log(`http:/\/10.0.157.237:8888/${href}?pageNum=4&pageSize=6`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/${href}?pageNum=4&pageSize=6`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+             fn2(data);
+             lazy_a()
+            }
+          });
+        }
+      })
+ 	$(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '1000' && num == 4) {
+          num++;
+          console.log(`http:/\/10.0.157.237:8888/${href}?pageNum=5&pageSize=6`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/${href}?pageNum=5&pageSize=6`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+             fn2(data);
+             lazy_a()
+            }
+          });
+        }
+      })
+ 	$(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '1000' && num == 5) {
+          num++;
+          console.log(`http:/\/10.0.157.237:8888/${href}?pageNum=6&pageSize=6`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/${href}?pageNum=6&pageSize=6`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+             fn2(data);
+             lazy_a()
+            }
+          });
+        }
+      })
+ 	 function fn (data, doc) {
+		doc.css({
+    		'background':'#fd6363',
+		    'border-radius': '24px'
+    	})
+    	doc.siblings().css({
+    		'background':'white',
+		    'border-radius': '0px'
+    	})
+		var div = $('#img');
+		var str = '';
+			var ul = $('<ul></ul>');
+			div.html(ul)
+			var str = '';
+			for(var temp of data.shop_data) {
+				console.log(temp)
+				if(temp.user.avatar == undefined) {
+					var id;
+				id = 'http://www.ibantang.com/topic/' + temp.id;
+					str += `<li><a href = ${id}><img src = ${temp.pic} width = '300px' height = '165px'>
+					<p>${temp.title}</p>
+					<div id = 'xiaotang1'><span>${temp.user.nickname}</span></div>
+					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div>
+					</li>`
+				} else {
+					 str += `<li><img src = ${temp.pic} width = '300px' height = '165px'>
+					<p>${temp.title}</p>
+					<div id = 'xiaotang1'><img src = ${temp.user.avatar} width = '24px' height = '24px'><span>${temp.user.nickname}</span></div>
+					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div>
+					</li>`
+				}
+			}
+		$(str).appendTo(ul);
+}
+	function fn2 (data) {
+		var div = $('#img');
+		var str = '';
+			var ul = $('<ul></ul>');
+			div.append(ul)
+			var str = '';
+			for(var temp of data.shop_data) {
+				console.log(temp)
+				if(temp.user.avatar == undefined) {
+					var id;
+				id = 'http://www.ibantang.com/topic/' + temp.id;
+					str += `<li><a href = ${id}><img  src="1.gif" alt="" data-original="${temp.pic}" class="lazy" width = '300px' height = '165px'>
+					<p>${temp.title}</p>
+					<div id = 'xiaotang1'><span>${temp.user.nickname}</span></div>
+					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div>
+					</li>`
+				} else {
+					 str += `<li><img src = ${temp.pic} width = '300px' height = '165px'>
+					<p>${temp.title}</p>
+					<div id = 'xiaotang1'><img src = ${temp.user.avatar} width = '24px' height = '24px'><span>${temp.user.nickname}</span></div>
+					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div>
+					</li>`
+				}
+			}
+		$(str).appendTo(ul);
+}
+	function lazy_a(lan) {
+      $(function() {
+
+          $("img.lazy").lazyload({
+            placeholder : "1.gif",
+            threshold : 1000,
+            event : "click",
+            effect : "fadeIn"
+          });
+      })
+    }
+
+	// var li = document.getElementsByClassName('li');
+	// var ul = document.getElementsByClassName('ul');
+	// var num;
+	// for(let i = 0 ; i<li.length; i++) {
+	// 	li[i].onclick = function () {
+
+	// 		for(var n = 0; n<ul.length; n++) {
+	// 			 li[n].parentNode.style.background = 'white';
+	// 		}
+	// 		this.parentNode.style.background = '#fd6363';
+	// 	    this.parentNode.style.borderRadius = '24px';
+	// 	   
+	// 	    num = i;
+	// 	    console.log(num)
+	// 	    ul[num].style.display = 'block'
+	// 	    }
+	// }
+
+	</script>
+</body>
+</html>
