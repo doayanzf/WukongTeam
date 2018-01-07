@@ -1,0 +1,54 @@
+/* ---脚部开始--- */
+
+.footer {
+    background: #434446;
+    padding-top: 0.1px;
+    clear: both;
+}
+
+.footer>.TDiv {
+    margin: 25px auto 0 auto;
+    width: 240px;
+    height: 95px;
+}
+
+.footer>.TDiv>img:nth-child(1) {
+    width: 75px;
+}
+
+.footer>.TDiv>.DImg {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 9px;
+    padding-left: 5px;
+    color: #ffffff;
+}
+
+.footer>.TDiv>.DImg>img {
+    line-height: 6px;
+    height: 25px;
+}
+
+.footer>.DBottom {
+    height: 35px;
+    background: #38383a;
+}
+
+.footer>.DBottom>.DbT {
+    text-align: center;
+}
+
+.footer>.DBottom>.DbT>a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #d3d3d3;
+}
+
+.footer>.DBottom>.DbT>b {
+    font-weight: normal;
+    color: #d3d3d3;
+    margin-left: 55px;
+}
+#ifram2 {
+    margin-bottom: -20px;
+}

@@ -1,217 +1,292 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>全场9块9领券特惠特卖_聚划算九块九包邮_每天9.9秒杀疯抢 - 省钱快报</title>
-    <link rel="shortcut icon"  href="logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 
     <script src="jquery.js"></script>
     <script src="jquery.lazyload.min.js" charset="utf-8"></script>
     <style media="screen">
-      *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body{
-        font-family: "helvetica neue","Hiragino Sans GB","冬青黑","Microsoft YaHei","微软雅黑",arial,sans-serif;
-        color: #444;
-        background-color: #f6f6f6;
-      }
-      #header{
-        width: 100%;
-        height: 176px;
-        background: skyblue;
-      }
-      #wrapper{
-        width: 100%;
-        margin: 0 auto;
-        /* position: relative; */
-      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      .k9_area{
-        width: 1100px;
-        /*position: relative;*/
-        /* margin: 20px 0 auto; */
-        margin-top: 20px;
-        /*left: 160px;*/
-        margin: 20px auto 0 auto;
+        body {
+            font-family: "helvetica neue", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", arial, sans-serif;
+            color: #444;
+            background-color: #f6f6f6;
+        }
 
+        #header {
+            width: 100%;
+            height: 176px;
+            background: skyblue;
+        }
 
-      }
-      .k9_area .head{
-        height: 44px;
-        background: #fff;
-      }
-      .head i{
-        display: inline-block;
-        width: 27px;
-        height: 23px;
-        background: url(img/99.png) center no-repeat;
-        background-size: cover;
-        margin: 0 10px 0 11px;
-        position: relative;
-        top: 1px;
-      }
-      .head span{
-        font-size: 24px;
-        line-height: 44px;
-        font-weight: 700;
-        color: #FF472B;
-      }
-      .cate-area{
-        height: 44px;
-        background-color: #fff;
-        border-top: 1px solid #f6f6f6;
-        margin-bottom: 20px;
-      }
-      .cate-item.active{
-        font-weight: 700;
-        color: #FF2220;
-        width: 54px;
-      }
-      .cate-item{
-        /*width: 88px;*/
-        padding: 0 13px;
-        display: inline-block;
-        font-size: 14px;
-        color: #333;
-        line-height: 44px;
-        cursor: pointer;
-      }
+        #wrapper {
+            width: 100%;
+            margin: 0 auto;
+            /* position: relative; */
+        }
 
-      .zk-list{
-        width: 1120px;
-        /*border: 1px solid black;*/
-        margin-right: -20px;
-        min-height: 500px;
-      }
-      .zk-itme{
-        /*border: 1px solid black;*/
-        /*float: left;*/
-        width: 260px;
-        margin: 0 17px 17px 0;
-        background-color: #fff;
-        border: 1px solid #f6f6f6;
-      }
-      .zk-left{
-        float: left;
-        margin-top: 1px;
-        margin-bottom:1px
+        .k9_area {
+            width: 1100px;
+            /*position: relative;*/
+            /* margin: 20px 0 auto; */
+            /* margin-top: 20px; */
+            /*left: 160px;*/
+            margin: 18px auto 0 auto;
+        }
 
-      }
-      #zk-h:hover{
-        border: 1px solid red;
-        margin-bottom: 0;
-        margin-top:0;
-      }
-      .title-area{
-        height: 16px;
-        line-height: 16px;
-        font-size: 12px;
-        padding: 10px 10px 0;
-      }
-      .img img{
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        width: 260px;
-        height: 260px;
-      }
-      .tmall-icon{
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        background: url(img/tianmao.png) center no-repeat;
-        background-size: cover;
-        margin-right: 5px;
-        vertical-align: top;
-      }
-      .post-free{
-        display:inline-block;
-        height: 16px;
-        padding: 0 2px;
-        font-size: 12px;
-        line-height: 16px;
-        color: #fff;
-        text-align: center;
-        background-color: #FFA248;
-        margin-right: 5px;
-        border-radius: 1px;
-      }
-      .price{
-        font-size: 12px;
-        color: #999;
-        line-height: 17px;
-        padding: 15px 10px 0;
+        .k9_area .head {
+            height: 44px;
+            background: #fff;
+        }
 
-      }
-      .sold{
-        float: right;
-      }
-      .info{
-        height: 32px;
-        padding: 6px 0;
-        overflow: hidden;
-      }
-      .price-area{
-        float: left;
-        width: 130px;
-        padding-left: 10px;
-      }
-      .price_1{
-        position: relative;
-        color: #FF2B22;
-        font-size: 12px;
-        line-height: 28px;
-        font-weight: 500;
-      }
-      .number-font{
-        font-family: Arial;
-        font-weight: 700;
-        font-size: 26px;
-        font-style: normal;
-        padding-left: 2px;
-      }
-      .buy{
-        display: block;
-        float: right;
-        width: 78px;
-        height: 20px;
-        margin: 6px 10px 0 0;
-        font-size: 12px;
-        line-height: 20px;
-        color: #fff;
-        background-color: #F20;
-        border-radius: 2px;
-        text-align: center;
-        cursor: pointer;
-      }
-      .cate-area span:hover{
-        color: red;
-      }
+        .head i {
+            display: inline-block;
+            width: 27px;
+            height: 23px;
+            background: url(img/99.png) center no-repeat;
+            background-size: cover;
+            margin: 0 10px 0 11px;
+            position: relative;
+            top: 1px;
+        }
+
+        .head span {
+            font-size: 24px;
+            line-height: 44px;
+            font-weight: 700;
+            color: #FF472B;
+        }
+
+        .cate-area {
+            height: 44px;
+            background-color: #fff;
+            border-top: 1px solid #f6f6f6;
+            margin-bottom: 20px;
+        }
+
+        .cate-item.active {
+            font-weight: 700;
+            color: #FF2220;
+            width: 54px;
+        }
+
+        .cate-item {
+            /*width: 88px;*/
+            padding: 0 13px;
+            display: inline-block;
+            font-size: 14px;
+            color: #333;
+            line-height: 44px;
+            cursor: pointer;
+        }
+
+        .zk-list {
+            width: 1120px;
+            /*border: 1px solid black;*/
+            margin-right: -20px;
+            min-height: 500px;
+        }
+
+        .zk-itme {
+            /*border: 1px solid black;*/
+            /*float: left;*/
+            width: 260px;
+            margin: 0 17px 17px 0;
+            background-color: #fff;
+            border: 1px solid #f6f6f6;
+        }
+
+        .zk-left {
+            float: left;
+            margin-top: 1px;
+            margin-bottom: 1px
+        }
+
+        #zk-h:hover {
+            border: 1px solid red;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .title-area {
+            height: 16px;
+            line-height: 16px;
+            font-size: 12px;
+            padding: 10px 10px 0;
+        }
+
+        .img img {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 260px;
+            height: 260px;
+        }
+
+        .tmall-icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(img/tianmao.png) center no-repeat;
+            background-size: cover;
+            margin-right: 5px;
+            vertical-align: top;
+        }
+
+        .post-free {
+            display: inline-block;
+            height: 16px;
+            padding: 0 2px;
+            font-size: 12px;
+            line-height: 16px;
+            color: #fff;
+            text-align: center;
+            background-color: #FFA248;
+            margin-right: 5px;
+            border-radius: 1px;
+        }
+
+        .price {
+            font-size: 12px;
+            color: #999;
+            line-height: 17px;
+            padding: 15px 10px 0;
+        }
+
+        .sold {
+            float: right;
+        }
+
+        .info {
+            height: 32px;
+            padding: 6px 0;
+            overflow: hidden;
+        }
+
+        .price-area {
+            float: left;
+            width: 130px;
+            padding-left: 10px;
+        }
+
+        .price_1 {
+            position: relative;
+            color: #FF2B22;
+            font-size: 12px;
+            line-height: 28px;
+            font-weight: 500;
+        }
+
+        .number-font {
+            font-family: Arial;
+            font-weight: 700;
+            font-size: 26px;
+            font-style: normal;
+            padding-left: 2px;
+        }
+
+        .buy {
+            display: block;
+            float: right;
+            width: 78px;
+            height: 20px;
+            margin: 6px 10px 0 0;
+            font-size: 12px;
+            line-height: 20px;
+            color: #fff;
+            background-color: #F20;
+            border-radius: 2px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .cate-area span:hover {
+            color: red;
+        }
+
+        #ifram2 {
+            margin-bottom: -20px;
+        }
     </style>
-  </head>
-  <body>
-      <div id="box">
-        <div id="header"></div>
-        <div id="wrapper">
-          <div class="k9_area">
-            <div class="head">
-              <i></i>
-              <span>9块9包邮</span>
-            </div>
-            <div class="cate-area">
-              <span class="cate-item active">精选</span>
-              <span class="cate-item">生活管家</span>
-              <span class="cate-item">美容美妆</span>
-              <span class="cate-item">数码运动</span>
-              <span class="cate-item">配饰穿搭</span>
-              <span class="cate-item">零食特产</span>
-            </div>
+    <link rel="stylesheet" href="../home/css/header.css">
+    <link rel="stylesheet" href="../home/css/reset.css">
+</head>
 
-            <div class="zk-list clearfix" id="couponList">
-              <!-- <div  class ="zk-left">    最大的 需要浮动的
+<body>
+    <div id="box">
+        <header>
+            <div class="up">
+                按
+                <b>Ctrl + D</b>,把省钱快报放入收藏夹，优惠券信息一手掌握！
+            </div>
+            <ul class="w">
+                <li class="left">
+                    <p>天猫淘宝
+                        <br/>一折疯抢sqkb.com
+                        <p/>
+                </li>
+                <li class="center">
+                    <input type="text">
+                    <div class="search">搜索</div>
+                </li>
+                <li class="right">
+                    <p class="p4">全场包邮</p>
+                    <p class="p3">专属优惠券</p>
+                    <p class="p2">人工精选</p>
+                    <p class="p1">正品好货</p>
+                </li>
+            </ul>
+        </header>
+        <!-- 头部导航栏 -->
+        <nav class="Hnav">
+            <ul class="w">
+                <li class="li1">
+                    <img class="herf" src="http://s1.51sqkb.com/dist/img/jxtj-d869de79ec.png" width="85" alt="">
+                </li>
+                <li class="li2" style="background:#ff472b" >
+                    <b class="herf">9块9包邮</b>
+                </li>
+                <li class="li3">
+                    <b class="herf">排行榜</b>
+                </li>
+                <li class="li4">
+                    <b class="herf">品牌特卖</b>
+                </li>
+                <li class="li5">
+                    <b class="herf">发现好物</b>
+                </li>
+                <li class="li6">
+                    <b class="herf">手机版</b>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div id="wrapper">
+            <div class="k9_area">
+                <div class="head">
+                    <i></i>
+                    <span>9块9包邮</span>
+                </div>
+                <div class="cate-area">
+                    <span class="cate-item active">精选</span>
+                    <span class="cate-item">生活管家</span>
+                    <span class="cate-item">美容美妆</span>
+                    <span class="cate-item">数码运动</span>
+                    <span class="cate-item">配饰穿搭</span>
+                    <span class="cate-item">零食特产</span>
+                </div>
+
+                <div class="zk-list clearfix" id="couponList">
+                    <!-- <div  class ="zk-left">    最大的 需要浮动的
                 <div class="zk-itme">    第二大的  包裹所有文字和图片
 
                   <div class="img">
@@ -243,195 +318,198 @@
 
               </div> -->
 
+                </div>
+
+
+
+
             </div>
 
-
-
-
-          </div>
-
         </div>
-      </div>
-  </body>
+    </div>
+
+    <iframe src="../home/footer.html " id="ifram2" width="100%" height="155" frameborder="0" scrolling="no"></iframe>
+</body>
 
 
 
 
-      <script type="text/javascript">
-        var ScollN =1;
-        var zhangtianmeinaozi = 'nine_jingxuan';
-        $.ajax({
-          url: 'http://10.0.157.237:8888/nine_jingxuan?pageNum=1&pageSize=8',
+<script type="text/javascript">
+    var ScollN = 1;
+    var zhangtianmeinaozi = 'nine_jingxuan';
+    $.ajax({
+        url: 'http://10.0.157.237:8888/nine_jingxuan?pageNum=1&pageSize=8',
 
-          type: 'get',
-          dataType: 'json',
-          cache: false,
-          success: function (data) {
+        type: 'get',
+        dataType: 'json',
+        cache: false,
+        success: function (data) {
             // console.log(data);
-            nine(data,this);
-            ScollN =1;
+            nine(data, this);
+            ScollN = 1;
             lazy_a();
-          }
-        });
+        }
+    });
 
-// 精选
-        $('.cate-item').on('click', function() {
-          const myThis = this;
+    // 精选
+    $('.cate-item').on('click', function () {
+        const myThis = this;
 
-          // alert($(this).text());
-          if($(this).text() == '精选') {
+        // alert($(this).text());
+        if ($(this).text() == '精选') {
             $.ajax({
-              url: 'http://10.0.157.237:8888/nine_jingxuan?pageNum=1&pageSize=8',
+                url: 'http://10.0.157.237:8888/nine_jingxuan?pageNum=1&pageSize=8',
 
-              type: 'get',
-              dataType: 'json',
-              cache: false,
-              success: function (data) {
-                // console.log(data);
-                zhangtianmeinaozi = 'nine_jingxuan';
-                ScollN =1;
-                nine(data,myThis);
-                lazy_a();
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    // console.log(data);
+                    zhangtianmeinaozi = 'nine_jingxuan';
+                    ScollN = 1;
+                    nine(data, myThis);
+                    lazy_a();
 
-              }
+                }
             });
 
-          }
-        })
+        }
+    })
 
-// 生活管家
-        $('.cate-item').on('click', function() {
-          const myThis = this;
+    // 生活管家
+    $('.cate-item').on('click', function () {
+        const myThis = this;
 
-          // alert($(this).text());
-          if($(this).text() == '生活管家') {
+        // alert($(this).text());
+        if ($(this).text() == '生活管家') {
             $.ajax({
-              url: 'http://10.0.157.237:8888/nine_shenghuo?pageNum=1&pageSize=8',
+                url: 'http://10.0.157.237:8888/nine_shenghuo?pageNum=1&pageSize=8',
 
-              type: 'get',
-              dataType: 'json',
-              cache: false,
-              success: function (data) {
-                // console.log(data);
-                nine(data,myThis);
-                zhangtianmeinaozi = 'nine_shenghuo';
-                ScollN =1;
-                lazy_a();
-              }
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    // console.log(data);
+                    nine(data, myThis);
+                    zhangtianmeinaozi = 'nine_shenghuo';
+                    ScollN = 1;
+                    lazy_a();
+                }
             });
-          }
-        })
-// 美容美妆
-        $('.cate-item').on('click', function() {
-          const myThis = this;
+        }
+    })
+    // 美容美妆
+    $('.cate-item').on('click', function () {
+        const myThis = this;
 
-          // alert($(this).text());
-          if($(this).text() == '美容美妆') {
+        // alert($(this).text());
+        if ($(this).text() == '美容美妆') {
             $.ajax({
-              url: 'http://10.0.157.237:8888/nine_meirong?pageNum=1&pageSize=8',
+                url: 'http://10.0.157.237:8888/nine_meirong?pageNum=1&pageSize=8',
 
-              type: 'get',
-              dataType: 'json',
-              cache: false,
-              success: function (data) {
-                // console.log(data);
-                nine(data,myThis);
-                zhangtianmeinaozi = 'nine_meirong';
-                ScollN =1;
-                lazy_a();
-              }
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    // console.log(data);
+                    nine(data, myThis);
+                    zhangtianmeinaozi = 'nine_meirong';
+                    ScollN = 1;
+                    lazy_a();
+                }
             });
-          }
-        })
-// 数码运动
-        $('.cate-item').on('click', function() {
-          const myThis = this;
+        }
+    })
+    // 数码运动
+    $('.cate-item').on('click', function () {
+        const myThis = this;
 
-          // alert($(this).text());
-          if($(this).text() == '数码运动') {
+        // alert($(this).text());
+        if ($(this).text() == '数码运动') {
             $.ajax({
-              url: 'http://10.0.157.237:8888/nine_shuma?pageNum=1&pageSize=8',
+                url: 'http://10.0.157.237:8888/nine_shuma?pageNum=1&pageSize=8',
 
-              type: 'get',
-              dataType: 'json',
-              cache: false,
-              success: function (data) {
-                // console.log(data);
-                nine(data,myThis);
-                zhangtianmeinaozi = 'nine_shuma';
-                ScollN =1;
-                lazy_a();
-              }
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    // console.log(data);
+                    nine(data, myThis);
+                    zhangtianmeinaozi = 'nine_shuma';
+                    ScollN = 1;
+                    lazy_a();
+                }
             });
-          }
-        })
-// 配饰穿搭
-        $('.cate-item').on('click', function() {
-          // alert($(this).text());
-            const myThis = this;
-          if($(this).text() == '配饰穿搭') {
+        }
+    })
+    // 配饰穿搭
+    $('.cate-item').on('click', function () {
+        // alert($(this).text());
+        const myThis = this;
+        if ($(this).text() == '配饰穿搭') {
             $.ajax({
-              url: 'http://10.0.157.237:8888/nine_peishi?pageNum=1&pageSize=8',
+                url: 'http://10.0.157.237:8888/nine_peishi?pageNum=1&pageSize=8',
 
-              type: 'get',
-              dataType: 'json',
-              cache: false,
-              success: function (data) {
-                // console.log(data);
-                nine(data,myThis);
-                zhangtianmeinaozi = 'nine_peishi';
-                ScollN =1;
-                lazy_a();
-              }
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    // console.log(data);
+                    nine(data, myThis);
+                    zhangtianmeinaozi = 'nine_peishi';
+                    ScollN = 1;
+                    lazy_a();
+                }
             });
-          }
-        })
-//零食特产
-        $('.cate-item').on('click', function() {
-          const myThis = this;
-          if($(this).text() == '零食特产') {
+        }
+    })
+    //零食特产
+    $('.cate-item').on('click', function () {
+        const myThis = this;
+        if ($(this).text() == '零食特产') {
             $.ajax({
-              url: 'http://10.0.157.237:8888/nine_lingshi?pageNum=1&pageSize=8',
-              type: 'get',
-              dataType: 'json',
-              cache: false,
-              success: function (data) {
-                nine(data, myThis);
-                zhangtianmeinaozi = 'nine_lingshi';
-                ScollN =1;
-                lazy_a();
-              }
+                url: 'http://10.0.157.237:8888/nine_lingshi?pageNum=1&pageSize=8',
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    nine(data, myThis);
+                    zhangtianmeinaozi = 'nine_lingshi';
+                    ScollN = 1;
+                    lazy_a();
+                }
             });
-          }
-        })
+        }
+    })
 
-        function nine(data, sdoc){
-          $(sdoc).css({
-        		'color':'red'
-        	})
-        	$(sdoc).siblings().css({
-        		'color':'black'
-        	})
-          var str = '';
-          var i = 0;
-          for (var coupon_listObj of data.shop_data) {
+    function nine(data, sdoc) {
+        $(sdoc).css({
+            'color': 'red'
+        })
+        $(sdoc).siblings().css({
+            'color': 'black'
+        })
+        var str = '';
+        var i = 0;
+        for (var coupon_listObj of data.shop_data) {
             i++;
-            str += `<div class ="zk-left" id = "zk-h" >`     //最大的div
+            str += `<div class ="zk-left" id = "zk-h" >` //最大的div
 
             if (i % 4 == 0) {
 
-            str += `
-              <div class="zk-itme"  style = "margin-right:0;">`   //包裹所有文字和图片的
-              //以及它是设置外边距的
+                str += `
+              <div class="zk-itme"  style = "margin-right:0;">` //包裹所有文字和图片的
+                //以及它是设置外边距的
             } else {
 
-            str += `
-              <div class="zk-itme">`   //包裹所有文字和图片的   并且和上面是一个
-              //以及它是设置外边距的
-              //每一次循环  有上面的 就没有下面的  因为是if else的关系
+                str += `
+              <div class="zk-itme">` //包裹所有文字和图片的   并且和上面是一个
+                //以及它是设置外边距的
+                //每一次循环  有上面的 就没有下面的  因为是if else的关系
             }
 
-            str += `
+            str +=
+                `
                 <div class="img">
                   <a href="${coupon_listObj.share_url}"><img  src="" alt="" data-original="${coupon_listObj.thumbnail_pic}" class="lazy"></a>
                 </div>
@@ -459,105 +537,105 @@
 
               </div>
             </div>`
-          }
-            $('.zk-list').html(str);
         }
+        $('.zk-list').html(str);
+    }
 
-        function lazy_a(lan) {
-          $(function() {
+    function lazy_a(lan) {
+        $(function () {
 
-              $("img.lazy").lazyload({
-                placeholder : "1.gif",
-                threshold : 200,
-                event : "click",
-                effect : "fadeIn"
-              });
-          })
-        }
+            $("img.lazy").lazyload({
+                placeholder: "1.gif",
+                threshold: 200,
+                event: "click",
+                effect: "fadeIn"
+            });
+        })
+    }
 
-        // $("img.lazy").show().lazyload();
-      </script>
+    // $("img.lazy").show().lazyload();
+</script>
 
-      <script type="text/javascript">
-
-      $(window).scroll(function () {
+<script type="text/javascript">
+    $(window).scroll(function () {
         var lastTop = $(this).scrollTop();
         if (parseInt(lastTop) > '100' && ScollN == 1) {
-          ScollN++;
-          console.log(`http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=2&pageSize=8`);
-          $.ajax({
-            url: `http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=2&pageSize=8`,
-            type: 'get',
-            dataType: 'json',
-            cache: false,
-            success: function (data) {
-              console.log(data);
-              nine_1(data);
-              lazy_a();
-            }
-          });
+            ScollN++;
+            console.log(`http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=2&pageSize=8`);
+            $.ajax({
+                url: `http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=2&pageSize=8`,
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    console.log(data);
+                    nine_1(data);
+                    lazy_a();
+                }
+            });
         }
-      })
+    })
 
-      $(window).scroll(function () {
+    $(window).scroll(function () {
         var lastTop = $(this).scrollTop();
         if (parseInt(lastTop) > '200' && ScollN == 2) {
-          ScollN++;
-          // console.log(`http://10.0.157.241:8888/${zhangtianmeinaozi}?pageNum=3&pageSize=8`);
-          $.ajax({
-            url: `http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=3&pageSize=8`,
-            type: 'get',
-            dataType: 'json',
-            cache: false,
-            success: function (data) {
-              console.log(data);
-              nine_1(data);
-              lazy_a();
-            }
-          });
+            ScollN++;
+            // console.log(`http://10.0.157.241:8888/${zhangtianmeinaozi}?pageNum=3&pageSize=8`);
+            $.ajax({
+                url: `http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=3&pageSize=8`,
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    console.log(data);
+                    nine_1(data);
+                    lazy_a();
+                }
+            });
         }
-      })
+    })
 
-      $(window).scroll(function () {
+    $(window).scroll(function () {
         var lastTop = $(this).scrollTop();
         if (parseInt(lastTop) > '300' && ScollN == 3) {
-          ScollN++;
-          // console.log(`http://10.0.157.241:8888/${zhangtianmeinaozi}?pageNum=3&pageSize=8`);
-          $.ajax({
-            url: `http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=4&pageSize=8`,
-            type: 'get',
-            dataType: 'json',
-            cache: false,
-            success: function (data) {
-              console.log(data);
-              nine_1(data);
-              lazy_a();
-            }
-          });
+            ScollN++;
+            // console.log(`http://10.0.157.241:8888/${zhangtianmeinaozi}?pageNum=3&pageSize=8`);
+            $.ajax({
+                url: `http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=4&pageSize=8`,
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    console.log(data);
+                    nine_1(data);
+                    lazy_a();
+                }
+            });
         }
-      })
+    })
 
-      function nine_1(data){
+    function nine_1(data) {
         var str = '';
         var i = 0;
         for (var coupon_listObj of data.shop_data) {
-          i++;
-          str += `<div class ="zk-left" id = "zk-h">`     //最大的div
+            i++;
+            str += `<div class ="zk-left" id = "zk-h">` //最大的div
 
-          if (i % 4 == 0) {
+            if (i % 4 == 0) {
 
-          str += `
-            <div class="zk-itme"  style = "margin-right:0;">`   //包裹所有文字和图片的
-            //以及它是设置外边距的
-          } else {
+                str += `
+            <div class="zk-itme"  style = "margin-right:0;">` //包裹所有文字和图片的
+                //以及它是设置外边距的
+            } else {
 
-          str += `
-            <div class="zk-itme">`   //包裹所有文字和图片的   并且和上面是一个
-            //以及它是设置外边距的
-            //每一次循环  有上面的 就没有下面的  因为是if else的关系
-          }
+                str += `
+            <div class="zk-itme">` //包裹所有文字和图片的   并且和上面是一个
+                //以及它是设置外边距的
+                //每一次循环  有上面的 就没有下面的  因为是if else的关系
+            }
 
-          str += `
+            str +=
+                `
               <div class="img">
                 <a href="${coupon_listObj.share_url}"><img  src="${coupon_listObj.thumbnail_pic}" alt="" class="lazy"></a>
               </div>
@@ -586,9 +664,10 @@
             </div>
           </div>`
         }
-          $('.zk-list').append(str);
-      }
-      </script>
+        $('.zk-list').append(str);
+    }
+</script>
+<script src="../home/js/header.js"></script>
 
 
 </html>
