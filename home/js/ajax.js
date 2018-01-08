@@ -33,7 +33,7 @@ var shopAjax = (urlLink) => {
                             <img src="" alt="">`;
                 }
                 str += `
-                                <img src="img/2018-01-03_093138.png" alt="">
+                                <img src="http://img.hb.aicdn.com/564f1cd1b8a9dbfc9b1abcffee416b37995aae223276-FkRO5c_fw658" alt="">
                                 <ul>
                                     <li class="Ll1">
                                         <img  src="img/1.gif" alt="" data-original="${newArr[i].coupon_info.thumbnail_pic}" class="lazy" width="265" height="265">
@@ -65,6 +65,15 @@ var shopAjax = (urlLink) => {
             }
             // $('.Dload').html(str);
             $(str).appendTo('.Dload');
+
+            $('.DSload').hover(
+                function() {
+                    $(this).css('box-shadow','0 0 10px #bbbbbb')
+                },
+                function () {
+                    $(this).css('box-shadow','')
+                }
+            )
         }
     });
 }
