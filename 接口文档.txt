@@ -1,0 +1,54 @@
+﻿接口地址:http://10.0.157.241:8888/nine_jingxuan?pageNum=0&pageSize=8
+
+熊猫首页
+	男: /format_nan
+	女: /format_nv
+
+九块九包邮
+	精选: /nine_jingxuan
+	生活管家: /nine_shenghuo
+	美容彩妆: /nine_meirong
+	数码运动: /nine_shuma
+	配饰穿搭: /nine_peishi
+	零食特产: /nine_lingshi
+
+排行榜
+	总榜: /ph_zongbang
+	女装: /ph_nvzhuang
+	美妆: /ph_meizhuang
+	食品生鲜: /ph_shipinshengxian
+	护肤: /ph_hufu
+	内衣: /ph_neiyi
+	日用百货: /ph_riyong
+	家纺软饰: /ph_jiafang
+	女鞋: /ph_nvxie
+	母婴童装: /ph_muying
+	手机周边: /ph_shouji
+	箱包: /ph_xiangbao
+	家电: /ph_jiadian
+	运动健身: /ph_yundong
+	珠宝配饰: /ph_zhubao
+
+品牌特卖: /temai
+
+发现好物: /faxian
+
+
+
+半糖首页
+	最新: /btzuixin
+	礼物: /btliwu
+	美食: /meishi
+	生活: /btshenghuo
+	设计感: /btshangbanzu
+	家居: /btjiaju
+	数码: /btshuma
+	阅读: /btyuedu
+	学生党: /btxueshengdang
+	上班族: /btshangbanzu
+	美妆: /btmeizhuang
+	护理: /bthuli
+	运动户外: /btyundonghuwai
+
+
+
