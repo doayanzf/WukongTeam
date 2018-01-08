@@ -824,21 +824,22 @@
             var str = '';
             for (var temp of data.shop_data) {
                 console.log(temp)
-                if (temp.user.avatar == undefined) {
                     var id;
                     id = 'http://www.ibantang.com/topic/' + temp.id;
+                if (temp.user.avatar == undefined) {
                     str +=
                         `<li><a href = ${id}><img src = ${temp.pic} width = '300px' height = '165px'>
 					<p>${temp.title}</p>
 					<div id = 'xiaotang1'><span>${temp.user.nickname}</span></div>
-					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div>
+					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div></a>
 					</li>`
                 } else {
+                    
                     str +=
-                        `<li><img src = ${temp.pic} width = '300px' height = '165px'>
+                        `<li><a href = ${id}><img src = ${temp.pic} width = '300px' height = '165px'>
 					<p>${temp.title}</p>
 					<div id = 'xiaotang1'><img src = ${temp.user.avatar} width = '24px' height = '24px'><span>${temp.user.nickname}</span></div>
-					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div>
+					<div id = 'count1'><img src ='sprites@x2-a5f96ad0bb_07.gif'><span>${temp.views}</span><img src="sprites@x2-a5f96ad0bb_03.gif" alt=""><span>${temp.likes}</span></div></a>
 					</li>`
                 }
             }
