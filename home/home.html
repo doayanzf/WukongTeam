@@ -161,7 +161,7 @@
                 <img src="img/2018-01-03_093138.png" alt="">
                 <ul>
                     <li class="Ll1">
-                        <img src="img/_1514529593045274011_400x400.jpg" 
+                        <img src="img/_1514529593045274011_400x400.jpg"
                         width="265" height="265" alt="">
                     </li>
                     <li class="Ll2">
@@ -180,7 +180,7 @@
                         <span>立即抢购</span>
                     </li>
                 </ul>
-            </div>                
+            </div>
             </a> -->
         </div>
     </div>
@@ -200,7 +200,7 @@
     <!-- 脚部开始 -->
 
     <!-- <div class='footer'></div> -->
-    <iframe src="./footer.html " id="ifram2"  width="100%" height="155" 
+    <iframe src="./footer.html " id="ifram2"  width="100%" height="155"
     frameborder="0" scrolling="no"></iframe>
 
     <!-- 浮动部分开始 -->
@@ -267,6 +267,17 @@
     //         event: 'click',  // 事件触发时才加载
     //     });
     // })
+    function lazy_a(lan) {
+        $(function () {
+
+            $("img.lazy").lazyload({
+                placeholder: "img/1407597976.jpg",
+                threshold: 200,
+                event: "click",
+                effect: "fadeIn"
+            });
+        })
+    }
 
 
 </script>

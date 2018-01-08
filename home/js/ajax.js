@@ -5,6 +5,7 @@ var shopAjax = (urlLink) => {
         dataType: 'json',
         cache: false,
         success: data => {
+            lazy_a();
             var str = '';
             var newArr = data.shop_data;
             for (i = 0; i < newArr.length; i++) {
@@ -17,14 +18,14 @@ var shopAjax = (urlLink) => {
                         <a href="">
                             <div class="DSload">`
                 }
-    
-                str += `        
+
+                str += `
                                 <img src="img/is-new-5a514b7e13.png" alt="">
                                 <img src="img/2018-01-03_093138.png" alt="">
                                 <ul>
                                     <li class="Ll1">
-                                        <img src="${newArr[i].coupon_info.thumbnail_pic}" 
-                                        width="265" height="265" alt="">
+
+                                        <img  src="img/1407597976.jpg" alt="" data-original="${newArr[i].coupon_info.thumbnail_pic}" class="lazy" width="265" height="265">
                                     </li>
                                     <li class="Ll2">
                                         <span>包邮</span>
@@ -42,16 +43,22 @@ var shopAjax = (urlLink) => {
                                         <span>立即抢购</span>
                                     </li>
                                 </ul>
-                            </div>                
+                            </div>
                         </a>`
             }
             // $('.Dload').html(str);
-            $(str).appendTo('.Dload'); 
+            $(str).appendTo('.Dload');
         }
     });
 }
+function lazy_a(lan) {
+    $(function () {
 
-
-
-
-
+        $("img.lazy").lazyload({
+            placeholder: "img/1407597976.jpg",
+            threshold: 200,
+            event: "click",
+            effect: "fadeIn"
+        });
+    })
+}
