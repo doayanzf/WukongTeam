@@ -24,8 +24,7 @@ var shopAjax = (urlLink) => {
                                 <img src="img/2018-01-03_093138.png" alt="">
                                 <ul>
                                     <li class="Ll1">
-
-                                        <img  src="img/1407597976.jpg" alt="" data-original="${newArr[i].coupon_info.thumbnail_pic}" class="lazy" width="265" height="265">
+                                        <img  src="img/1.gif" alt="" data-original="${newArr[i].coupon_info.thumbnail_pic}" class="lazy" width="265" height="265">
                                     </li>
                                     <li class="Ll2">
                                         <span>包邮</span>
@@ -51,9 +50,8 @@ var shopAjax = (urlLink) => {
         }
     });
 }
-function lazy_a(lan) {
+function lazy_a() {
     $(function () {
-
         $("img.lazy").lazyload({
             placeholder: "img/1407597976.jpg",
             threshold: 200,
