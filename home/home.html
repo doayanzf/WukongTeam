@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
     <link rel="stylesheet" href="css/page.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/deng.css">
     <script src="./js/jquery.js"></script>
     <script src="./js/ajax.js"></script>
     <script src="./js/swiper-3.3.1.min.js"></script>
     <script src="./js/jquery.lazyload.min.js" charset="utf-8"></script>
+    <script src="./js/deng.js"></script>
     <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
 </head>
 
@@ -119,28 +121,28 @@
 
             <div class="bottom">
                 <div class="div1">
-                    <img src="http://file.17gwx.com/sqkb/cate/2017/11/28/400605a1d2ca92c2b7.jpeg" class="cartoon" width="114" height="114" alt="">
+                    <img src="img/400605a1d2ca92c2b7.jpeg" class="cartoon" width="114" height="114" alt="">
                     <p>1女装</p>
                 </div>
                 <div class="div2">
-                    <img src="http://file.17gwx.com/sqkb/cate/2017/11/28/434045a1d2d48dff59.jpeg" class="cartoon" width="114" height="114" alt="">
-                    <p>美妆</p>
+                    <img src="img/434045a1d2d48dff59.jpeg" class="cartoon" width="114" height="114" alt="">
+                    <p>女装</p>
                 </div>
                 <div class="div3">
-                    <img src="http://7xiwnz.com2.z0.glb.qiniucdn.com/zhekou_cate_collection/20170330/1407597976.jpg" class="cartoon" width="114" height="114" alt="">
-                    <p>食品生鲜</p>
+                    <img src="img/128335a1fedf594da7.jpeg" class="cartoon" width="114" height="114" alt="">
+                    <p>女装</p>
                 </div>
                 <div class="div4">
-                    <img src="http://file.17gwx.com/sqkb/cate/2017/11/30/128335a1fedf594da7.jpeg" class="cartoon" width="114" height="114" alt="">
-                    <p>护肤</p>
+                    <img src="img/888605a1d307dea4e1.jpg" class="cartoon" width="114" height="114" alt="">
+                    <p>女装</p>
                 </div>
                 <div class="div5">
-                    <img src="http://file.17gwx.com/sqkb/cate/2017/11/30/449125a1fec1be6397.jpg" class="cartoon" width="114" height="114" alt="">
-                    <p>内衣</p>
+                    <img src="img/1407597976.jpg" class="cartoon" width="114" height="114" alt="">
+                    <p>女装</p>
                 </div>
                 <div class="div6">
-                    <img src="http://file.17gwx.com/sqkb/cate/2017/11/28/888605a1d307dea4e1.jpg" class="cartoon" width="114" height="114" alt="">
-                    <p>日用百货</p>
+                    <img src="img/449125a1fec1be6397.jpg" class="cartoon" width="114" height="114" alt="">
+                    <p>女装</p>
                 </div>
             </div>
         </div>
@@ -156,32 +158,31 @@
 
         <div class="Dload">
             <!-- <a href="">
-                <div class="DSload">
-                    <img src="img/is-new-5a514b7e13.png" alt="">
-                    <img src="img/2018-01-03_093138.png" alt="">
-                    <ul>
-                        <li class="Ll1">
-                            <img src="img/_1514529593045274011_400x400.jpg"
-                            width="265" height="265" alt="">
-                        </li>
-                        <li class="Ll2">
-                            <span>包邮</span>
-                            <span>某牌子的某产品</span>
-                            <p>共32件</p>
-                        </li>
-                        <li class="Ll3">
-                            <span>现价:￥18</span>
-                            <span>销量:222222</span>
-                        </li>
-                        <li class="Ll4">
-                            <span>券后价:￥
-                                <b>14</b>
-                                <b>.9</b>
-                            </span>
-                            <span>立即抢购</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="DSload">
+                <img src="img/is-new-5a514b7e13.png" alt="">
+                <img src="img/2018-01-03_093138.png" alt="">
+                <ul>
+                    <li class="Ll1">
+                        <img src="img/_1514529593045274011_400x400.jpg"
+                        width="265" height="265" alt="">
+                    </li>
+                    <li class="Ll2">
+                        <span>包邮</span>
+                        <span>某牌子的某产品</span>
+                    </li>
+                    <li class="Ll3">
+                        <span>现价:￥18</span>
+                        <span>销量:222222</span>
+                    </li>
+                    <li class="Ll4">
+                        <span>券后价:￥
+                            <b>14</b>
+                            <b>.9</b>
+                        </span>
+                        <span>立即抢购</span>
+                    </li>
+                </ul>
+            </div>
             </a> -->
         </div>
     </div>
@@ -208,7 +209,39 @@
     <div class="FlDiv">
 
     </div>
+
+    <!-- 登录框 -->
+    <div class="htmleaf-container">
+
+
+    		<div id="wrapper" class="login-page">
+    		  <div id="login_form" class="form">
+    		    <form class="register-form">
+    		      <input type="text" placeholder="用户名" id="r_user_name"/>
+    		      <input type="password" placeholder="密码" id="r_password" />
+    		      <input type="text" placeholder="电子邮件" id="r_emial"/>
+    		      <button id="create">创建账户</button>
+    		      <p class="message">已经有了一个账户? <a href="#">立刻登录</a></p>
+    		    </form>
+    		    <form class="login-form">
+    		      <input type="text" placeholder="用户名" id="user_name"/>
+    		      <input type="password" placeholder="密码" id="password"/>
+    		      <button id="login">登　录</button>
+    		      <p class="message">还没有账户? <a href="#">立刻创建</a></p>
+    		    </form>
+    		  </div>
+    		</div>
+
+    </div>
+  <!-- 登录按钮 -->
+    <button class="deng" type="button" name="button">登录</button>
 </body>
+    <script type="text/javascript">
+      $('.deng').click(function () {
+        $('.htmleaf-container').toggle();
+        console.log(1111);
+      })
+    </script>
 
 <script>
     //小动画效果
@@ -259,6 +292,19 @@
         autoplayDisableOnInteraction: false
     });
 
+     //懒加载
+    // $(function () {
+    //     $("img.lazy").lazyload({
+    //         placeholder: "img/1407597976.jpg", //用图片提前占位
+    //         effect: "fadeIn", // 载入使用何种效果
+    //         threshold: 200, // 提前开始加载
+    //         event: 'click',  // 事件触发时才加载
+    //     });
+    // })
+
+
+
 </script>
     <script src="./js/header.js"></script>
+
 </html>
