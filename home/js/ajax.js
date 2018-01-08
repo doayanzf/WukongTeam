@@ -9,18 +9,30 @@ var shopAjax = (urlLink) => {
             var str = '';
             var newArr = data.shop_data;
             for (i = 0; i < newArr.length; i++) {
+                var SArr = newArr[i].coupon_info.zk_price.split('.');
+                if (SArr[1]) {} else SArr[1] = 0;
+                if (newArr[i].item_count == 1) {
+                    str += `<a href="http://www.sqkb.com/zk/${newArr[i].coupon_info.coupon_id}/">`;
+                } else {
+                    str += `<a href="http://www.sqkb.com/topic/${newArr[i].topic_id}/">`;
+                };
+
+
                 if ((i + 1) % 4 == 0) {
                     str += `
-                        <a href="">
-                            <div class="DSload" style = "margin-right:0;">`
+                            <div class="DSload" style = "margin-right:0;">`;
                 } else {
                     str += `
-                        <a href="">
-                            <div class="DSload">`
+                            <div class="DSload">`;
                 }
-
+                if (newArr[i].coupon_info.is_new) {
+                    str += `
+                            <img src="img/is-new-5a514b7e13.png" alt="">`;
+                } else {
+                    str += `
+                            <img src="" alt="">`;
+                }
                 str += `
-                                <img src="img/is-new-5a514b7e13.png" alt="">
                                 <img src="img/2018-01-03_093138.png" alt="">
                                 <ul>
                                     <li class="Ll1">
@@ -28,16 +40,22 @@ var shopAjax = (urlLink) => {
                                     </li>
                                     <li class="Ll2">
                                         <span>包邮</span>
-                                        <span>${newArr[i].coupon_info.title}</span>
+                                        <span>${newArr[i].coupon_info.title}</span>`
+
+                if (newArr[i].item_count != 1){
+                    str += `<p>共${newArr[i].item_count}件</p>`
+                }
+
+                str += `                        
                                     </li>
                                     <li class="Ll3">
-                                        <span>现价:￥18</span>
+                                        <span>现价:￥${newArr[i].coupon_info.raw_price}</span>
                                         <span>销量:${newArr[i].coupon_info.month_sales}</span>
                                     </li>
                                     <li class="Ll4">
                                         <span>券后价:￥
-                                            <b>14</b>
-                                            <b>.9</b>
+                                            <b>${SArr[0]}</b>
+                                            <b>.${SArr[1]}</b>
                                         </span>
                                         <span>立即抢购</span>
                                     </li>

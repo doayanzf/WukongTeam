@@ -48,8 +48,9 @@
 }
 
 .body .left_ul .li2 {
-	background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
+    background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
 }
+
 
 .body .left_ul .li3 {
 	background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
@@ -230,7 +231,16 @@
 }
 
 .DSload>ul .Ll2 {
-	margin-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.DSload>ul .Ll2>p {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: -35px;
 }
 
 .DSload>ul .Ll2 span:first-child {
