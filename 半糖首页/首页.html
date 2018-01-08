@@ -310,12 +310,45 @@
             text-align: center;
             line-height: 40px;
         }
+        #aaa{
+              width: 100%;
+              height: 100%;
+              background: rgba(0,0,0,0.3);
+              position:fixed;
+              display: none;
+              z-index: 3;
+        }
+        #ads{
+            width: 50px;
+            height: 50px;
+            cursor:pointer;
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            z-index: 4;
+        }
+        #container{
+            position: fixed;
+            top:100px;
+            left: 200px; 
+            border-radius: 20px;
+        }
+      
     </style>
     <script type="text/javascript" src='jquery.js'></script>
     <script type="text/javascript" src='jquery.lazyload.min.js'></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.3&key=2204a199f8452326d30041dfd06d0f1e"></script> 
 </head>
 
 <body>
+    <div id = 'aaa'>
+     <div id="container" style="width:800px; height:500px">
+
+    </div>
+    </div>
+    <div id = 'ads'>
+     <img src="1.jpg" alt="">
+    </div>
     <div id='head'>
         <div id='left'>
             <div id='bantang'>
@@ -332,7 +365,7 @@
                     <a href="./好物.html">好物</a>
                 </li>
                 <li>
-                    <a href="../home/home.html">优惠券
+                    <a href="">优惠券
                         <img src="coupon-icon-1-503e0275d4.png">
                     </a>
                 </li>
@@ -449,6 +482,33 @@
         </div>
         <div id='footer2'>地址：北京市东城区箭厂胡同 · 京ICP备14040010号-5 · 半糖 · 发现值得买的好东西</div>
     </div>
+    <script type="text/javascript">
+    $('#ads').on('click', function() { 
+           // 地图的初始化
+        var map = new AMap.Map('container', {
+            resizeEnable: true,
+            zoom: 11,
+            center: [116.397428, 39.90923]        
+        });
+        
+        AMap.plugin(['AMap.ToolBar','AMap.Scale','AMap.OverView'],
+            function(){
+                map.addControl(new AMap.ToolBar());
+
+                map.addControl(new AMap.Scale());
+
+                map.addControl(new AMap.OverView({isOpen:true}));
+        });
+
+        var marker = new AMap.Marker({
+            position: [116.397428, 39.90923],
+            map: map
+        });
+       
+        $('#aaa').toggle();
+    })
+
+    </script>
     <script type="text/javascript">
         var num = 0;
         var href = 'btzuixin';
