@@ -1,7 +1,7 @@
   function check_login() {
   	var name = $("#user_name").val();
   	var pass = $("#password").val();
-  	if (name == "www.htmleaf.com" && pass == "www.htmleaf.com") {
+  	if (name == "悟空团队" && pass == "123") {
   		alert("登录成功！");
   		$("#user_name").val("");
   		$("#password").val("");
