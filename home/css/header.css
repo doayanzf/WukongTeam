@@ -1,0 +1,139 @@
+/* ----头部开始------ */
+
+
+/* ---头部之页头--- */
+
+header .up {
+	background-color: #f4f4f4;
+	text-align: center;
+	height: 40px;
+	font-size: 16px;
+	line-height: 39px;
+}
+
+
+/* ---头部之搜索栏-- */
+
+header {
+	background: #ffffff;
+	height: 145px;
+	margin: 0 auto;
+}
+
+header>ul>li {
+	float: left;
+	height: 106px;
+}
+
+header .left {
+	width: 320px;
+	background: url(../img/logo.png) left no-repeat;
+}
+
+header .left p {
+	margin: 36px 0 0 192px;
+}
+
+header .center {
+	width: 460px;
+	height: 42px;
+	border: 2px solid red;
+	border-radius: 5px;
+	margin-top: 32px;
+}
+
+header .center>input {
+	float: left;
+	width: 350px;
+	border: none;
+	height: 100%;
+	background: url('../img/search-btn-1e49dbf095.png') no-repeat 10px;
+	background-size: 15px;
+	text-indent: 30px;
+	font-size: 15px;
+}
+
+header .search {
+	width: 106px;
+	height: 100%;
+	line-height: 40px;
+	text-align: center;
+	background: red;
+	float: right;
+	color: rgb(255, 255, 255);
+	font-size: 19px;
+}
+
+header .right {
+	width: 320px;
+}
+
+header .right>p {
+	text-align: center;
+	float: right;
+	color: #787878;
+	width: 65px;
+	height: 65px;
+	margin-top: 8px;
+	line-height: 120px;
+}
+
+header .p1 {
+    background: 
+    url(http://s1.51sqkb.com/dist/img/slogan-icon-1-a61c191904.png) 
+    center no-repeat;
+    background-size: 30px;
+}
+
+header .p2 {
+    background: url(http://s1.51sqkb.com/dist/img/slogan-icon-2-6cacea570c.png) 
+    center no-repeat;
+	background-size: 30px;
+}
+
+header .p3 {
+    background: url(http://s1.51sqkb.com/dist/img/slogan-icon-3-743e48e40e.png)
+    center no-repeat;
+	background-size: 30px;
+}
+
+header .p4 {
+    background: url(http://s1.51sqkb.com/dist/img/slogan-icon-4-2b2d3a03d0.png)
+    center no-repeat;
+	background-size: 30px;
+}
+
+
+/* ----头部之导航栏--- */
+
+.Hnav {
+	height: 40px;
+	width: 100%;
+	background: #444444;
+	clear: both;
+}
+
+.Hnav>ul>li {
+	float: left;
+	width: 115px;
+	height: 40px;
+	text-align: center;
+	line-height: 43px;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.Hnav img {
+	float: left;
+	margin: 11px 0 0 75px;
+}
+
+.Hnav .li1 {
+	width: 230px;
+    background: #ff472b;
+    margin-right: 15px;
+}
+
+
+
+/* ----主体开始----- */

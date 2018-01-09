@@ -1,0 +1,338 @@
+/* ----头部开始------ */
+
+
+/* ---头部之页头--- */
+
+
+/* ----头部之导航栏--- */
+
+
+/* ----主体开始----- */
+
+.body {
+	/* background: yellow; */
+	height: 390px;
+	margin-top: 10px;
+    position: relative;
+}
+
+/* ---主体左边--- */
+
+.body .left_ul {
+	position: absolute;
+	top: -10px;
+	height: 401px;
+	width: 230px;
+	background: #ffffff;
+}
+
+.body .left_ul li {
+	width: 230px;
+	height: 48px;
+	line-height: 48px;
+	/* border-bottom: 1px solid #c6c6c6; */
+	background: #ffffff;
+	padding-left: 70px;
+}
+
+.body .left_ul a {
+	color: #000000;
+}
+
+.body .left_ul a:hover {
+	color: #ff472b;
+}
+
+.body .left_ul .li1 {
+	background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
+}
+
+.body .left_ul .li2 {
+    background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
+}
+
+
+.body .left_ul .li3 {
+	background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
+}
+
+.body .left_ul .li4 {
+	background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
+}
+
+.body .left_ul .li5 {
+	background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
+}
+
+.body .left_ul .li6 {
+	background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
+}
+
+.body .left_ul .li7 {
+	background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
+}
+
+.body .left_ul .li8 {
+	background: url(../img/xiao-1.jpg) 29px 15px no-repeat;
+}
+
+
+/* ----主体中间-- */
+
+.center_div {
+	float: right;
+	width: 860px;
+	height: 220px;
+}
+
+.center_div .Carousel {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: left;
+	width: 650px;
+	height: 210px;
+	background: rgb(152, 92, 13);
+}
+
+.center_div .cartoon {
+	margin-top: 6px;
+}
+
+.center_div .rightS {
+	margin-bottom: 10px;
+	float: right;
+	width: 200px;
+	height: 210px;
+	background: rgb(152, 13, 13);
+}
+
+
+/* ----主体中下-- */
+
+.center_div .bottom {
+	clear: both;
+	width: 860px;
+	height: 170px;
+}
+
+.center_div .bottom div {
+	margin-top: 3px;
+	text-align: center;
+	float: left;
+	width: 143.3px;
+	height: 168px;
+	background: rgb(255, 255, 255);
+	position: relative;
+	border-left: 1px solid #d8d8d8;
+}
+
+.center_div .bottom .div1 {
+	border-left: none;
+}
+
+.center_div .bottom img {
+	position: absolute;
+	top: 8px;
+	left: 17px;
+}
+
+.center_div .bottom>div>p {
+	position: absolute;
+	bottom: 18px;
+	left: 58px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+
+/*------ 配合加载部分开始------ */
+
+.upload {
+	clear: both;
+	margin-top: 15px;
+}
+
+
+/* ----配合nav部分，不需加载---- */
+
+.upload nav {
+	background: #ffffff;
+	width: 100%;
+	height: 40px;
+}
+
+.upload>nav>h1 {
+	float: left;
+}
+
+.upload>nav>p {
+	float: left;
+}
+
+.upload nav h1 {
+	color: #ff472b;
+	line-height: 40px;
+	text-indent: 45px;
+	background: url(../img/recommend-head-icon-7acf0e8fe5.png) 10px no-repeat;
+	background-size: 30px;
+}
+
+.upload nav>p {
+	line-height: 40px;
+	margin-left: 10px;
+}
+
+.upload nav>p>b {
+	display: inline-block;
+	padding-top: 2px;
+	color: #ff472b;
+}
+
+
+/* ---配合加载之需加载部分--- */
+
+.Dload {
+	overflow: hidden;
+	width: 100%;
+}
+
+.Dload .DSload {
+	height: 370px;
+	width: 265px;
+	margin: 6px 13px 10px 0;
+	background: #ffffff;
+	float: left;
+	position: relative;
+}
+
+.DSload>img:first-child {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+
+.DSload>img:nth-child(2) {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	right: 0px;
+}
+
+.DSload>ul li {
+	height: 30px;
+	line-height: 30px;
+}
+
+.DSload>ul .Ll1 {
+	height: 260px;
+}
+
+.DSload>ul .Ll2 {
+    margin-top: 10px;
+    position: relative;
+}
+.DSload>ul .Ll2>p {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: -35px;
+}
+
+.DSload>ul .Ll2 span:first-child {
+	display: inline-block;
+	background: #ffa248;
+	margin: 0 6px 0 33px;
+	color: #ffffff;
+	text-align: center;
+	width: 30px;
+	height: 16px;
+	line-height: 16px;
+}
+
+.DSload>ul .Ll3 {
+	padding: 0 10px;
+	color: #9999b2;
+}
+
+.DSload>ul .Ll3 span:first-child {
+	float: left;
+}
+
+.DSload>ul .Ll3 span:nth-child(2) {
+	float: right;
+}
+
+.DSload>ul .Ll4 {
+	padding: 5px 10px;
+	height: 40px;
+}
+
+.DSload>ul .Ll4 span:nth-child(1) {
+	color: #ff472b;
+	display: inline-block;
+	line-height: 10px;
+}
+
+.DSload>ul>.Ll4>span:nth-child(1)>b:first-child {
+	font-size: 20px;
+}
+
+.DSload>ul .Ll4 span:nth-child(2) {
+	margin-top: 2px;
+	float: right;
+	display: inline-block;
+	background-color: #ff472b;
+	width: 82px;
+	height: 21px;
+	line-height: 21px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.duo {
+	clear: both;
+	margin-top: 20px;
+	height: 200px;
+	width: 300px;
+}
+
+
+/* ---查看更多优惠券--- */
+
+.Dmore {
+	height: 30px;
+	width: 200px;
+	line-height: 30px;
+	background: #ffffff;
+	margin: 43px auto 50px auto;
+	box-shadow: 0px 0px 3px #989898;
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+/* ---脚部开始--- */
+#ifram2 {
+    margin-bottom: -20px;
+}
+/* ---分页器--- */
+
+.swiper-container {
+	width: 650px;
+	height: 210px;
+}
+
+.swiper-pagination-bullet {
+	background: rgba(red, green, blue, 0.5)
+}
+
+.swiper-pagination-bullet-active {
+	width: 25px;
+	background: rgb(255, 255, 255);
+	border-radius: 5px;
+}
+
+
+/* ---浮动部分开始--- */

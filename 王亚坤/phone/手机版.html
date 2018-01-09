@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机版</title>
+	<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: linear-gradient(to right, #ff3535,  #ff8049);
+		}
+		/*主体*/
+		#main{
+			margin: 100px auto;
+			width: 1000px;      
+			height: 600px;
+		}
+		/*主体左*/
+		#main-left{
+			width: 447px;
+			height: 620px;
+			float: left;
+		}
+		#top{
+			width: 252px;
+			height: 58px;
+			background: purple;
+			background: url(images/logo.png);
+		}
+		#middle{
+			margin-top: 16px;
+			width: 447px;
+			height: 240px;
+			padding: 40px 0;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+		}
+		p{
+			font-family: "helvetica neue","Hiragino Sans GB","冬青黑","Microsoft YaHei","微软雅黑",arial,sans-serif;
+			font-size: 16px;
+			line-height: 30px;
+			color: #fff;
+		}
+		#bottom{
+			margin-top: 22px;
+			width: 447px;
+			height: 200px;
+		}
+		#bottom img{
+			float: left;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+			width: 206px;
+			height: 62px;
+			display: block;
+			float: right;
+			line-height: 62px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: bold;
+			border: 1px solid #fff;
+		}
+		#btn-ios{
+			margin-top: 30px;
+		}
+		#btn-android{
+			margin-top: 22px;
+		}
+		/*主体右*/
+		#main-right{
+			width: 378px;
+			height: 650px;
+			background: red;
+			float: right;
+			background: url(images/phone.png);
+			position: relative;
+		}
+		#pic{
+			width: 240px;
+			height: 427px;
+			position: absolute;
+			top: 96px;
+			left: 70px;
+		}
+		.lunbo{
+			position: absolute;
+			top: 280px;
+			cursor: pointer;
+		}
+		#left{
+			right: 413px;
+		}
+		#right{
+			right: -60px;
+		}
+		.bg{
+			position: fixed;
+		}
+		#bg1 {
+			
+			top: 508px;
+			left: -50px;
+		}
+		#bg2{
+			top: 71px;
+			left: 0px;
+		}
+		#bg3{
+			top: 41px;
+			right: 0px;
+		}
+		#bg4{
+			top: 400px;
+			right: 0px;
+		}
+		#bg5{
+			top: 30px;
+			left: 600px;
+		}
+		#bg6{
+			top: -60px;
+			right: 300px;
+		}
+	</style>
+</head>
+<body>
+	<img src="images/bg1.png" alt="" id="bg1" class="bg">
+	<img src="images/bg2.png" alt="" id="bg2" class="bg">
+	<img src="images/bg3.png" alt="" id="bg3" class="bg">
+	<img src="images/bg1.png" alt="" id="bg4" class="bg">
+	<img src="images/bg1.png" alt="" id="bg5" class="bg">
+	<img src="images/bg1.png" alt="" id="bg6" class="bg">
+
+	<div id="main">
+		<div id="main-left">
+			<div id="top"></div>
+			<div id="middle" class="left-son">
+				<img src="images/biaoti.png" alt="">
+				<p>每日更新天猫淘宝大额优惠券。聚划算的优惠券，淘实惠的购物网站，聪明人网购的便宜坊，网购5折天天省钱，需要什么一键搜索，专属客服一对一快速答复。特卖、低价、白菜价、9块9包邮，尽在省钱快报。</p>
+			</div>
+			<div id="bottom" class="left-son">
+				<img src="images/erweima.png" alt="">
+				<a href="https://itunes.apple.com/cn/app/id1116025300?mt=8" id="btn-ios">App Store下载</a>
+				<a href="http://file.17gwx.com/sqkb_web.apk" id="btn-android">Android下载</a>
+			</div>
+		</div>
+		<div id="main-right">
+			<div id="pic"><img src="images/lunbo1.jpg" alt="" id="lunbo"></div>
+			<div class="lunbo" id="left"><img src="images/left.png" alt=""></div>
+			<div class="lunbo" id="right"><img src="images/right.png" alt=""></div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+		var lunbo = document.getElementById('lunbo');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var imgs = ["images/lunbo1.jpg", "images/lunbo2.jpg", "images/lunbo3.jpg", "images/lunbo4.jpg"];
+
+		var count = 0;
+
+		left.onclick = function () {
+			count--;
+			if (count < 0) {
+				count = 3;
+			}
+			lunbo.src = imgs[count];
+		}
+
+		right.onclick = function () {
+			count++;
+			if (count > 3) {
+				count = 0;
+			}
+			lunbo.src = imgs[count];
+		}
+	</script>
+</html>

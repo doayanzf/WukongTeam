@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发现</title>
+	<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+			display: block;
+		}
+		body{
+			width: 1580px;
+			margin: 0 auto;
+		}
+		#youhui{
+			position: fixed;
+			top: 260px;
+			right: 0;
+		}
+		/*头部*/
+		#head{
+			width: 1440px;
+			height: 60px;
+			margin: 0 71px 30px;
+		}
+		/*左边导航*/
+		#menu{
+			width: 390px;
+			height: 44px;
+			margin-left: 40px;
+			float: left;
+			position: relative;
+		}
+		#menu a:hover{
+			border-bottom: 2px solid red;
+		}
+		.float{
+			float: left;
+			margin: 16px 30px 0 10px;
+		}
+		#logo{
+			margin: 18px 38px 0 0;
+		}
+		#bg1{
+			position: absolute;
+			right: 6px;
+		}
+		/*右边搜索框*/
+		#right{
+			width:230px;
+			height: 32px;
+			float: right;
+			margin:13px 40px 0 0;
+			position: relative;
+		}
+		#right input {
+			width:200px;
+			height: 30px;
+			border:  1px solid #bfbfbf;
+			border-radius: 15px;
+			color: #999;
+			padding-left: 30px;
+		}
+		#right a{
+			position:absolute;
+			top: 7px;
+			left: 9px;
+		}
+		/*主体*/
+		#main{
+			width: 770px;
+			padding-left: 190px;
+			margin: 0 auto;
+			position: relative;
+		}
+		#main:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		#left{
+			position: absolute;
+			top: 3px;
+			left: 10px;
+		}
+		.left{
+			border-bottom: 1px dashed gray;
+			text-align: center;
+    		width: 160px;
+		}
+		#left1{
+			height: 24px;
+			padding-bottom: 20px;
+			font-size: 16px;
+    		line-height: 24px;
+		}
+		#left2{
+    		height: 50px;
+			color: #fd6363;
+			font-size: 14px;
+			line-height: 50px;
+			cursor: pointer;
+		}
+		/*主体右侧*/
+		#main-right{
+			width: 770px;
+		}
+		#main-right li{
+			list-style: none;
+			width: 770px;
+			height: 150px;
+			float: left;
+			padding-bottom: 30px;
+			position: relative;
+		}
+		#main-right img{
+			float: left;
+			margin-left: 15px;
+			width: 220px;
+			height: 126px;
+		}
+		h3{
+			width: 500px;
+			height: 28px;
+			float: right;
+		}
+		h3 a:hover{
+			color: red;
+		}
+		p{
+			line-height: 26px;
+			width: 500px;
+			height: 54px;
+			float: right;
+			margin-top: 10px;
+			color: gray;
+			overflow: hidden;
+		}
+		#main-right .liulan{
+			width: 145px;
+			height: 18px;
+			position: absolute;
+			right: 10px;
+			bottom: 50px;
+		}
+		#main-right .tubiao1{
+			width: 16px;
+			height: 14px;
+			float: left;
+			margin-right: 3px;
+		}
+		#main-right .tubiao2{
+			width: 14px;
+			height: 13px;
+			float: left;
+			margin-right: 5px;
+		}
+		span{
+			height: 14px;
+			font-size: 13px;
+			display: block;
+			float: left;
+			color: gray;
+		}
+		#footer1{
+			margin-top:10px;
+			width:1580px;
+			height: 160px;
+			background: #666;
+			padding: 20px 0 10px 20px;
+		}
+		#footer1 ul{
+			float: left;
+			width: 180px;
+			height: 160px;
+			padding-left: 30px;
+			border-left: 1px solid white;
+		}
+		#footer1 ul li{
+			font-size: 13px;
+			line-height: 35px;
+			list-style: none;
+		}
+		#footer1 ul li a{
+			color: white;
+			text-decoration: none;
+		}
+		#footer1 #footright{
+			float:right;
+		}
+		#footright ul{
+			margin-top:15px;
+			border: none
+		}
+		#erweima{
+			margin-top:20px;
+			margin-right: 100px;
+		}
+		#footright li{
+			line-height: 35px;
+			margin-bottom: 8px;
+			color: #fff;
+		}
+		#footer2{
+			width:1600px;
+			height: 50px;
+			background: black;
+			margin: 0 auto;
+			color: #bfbfbf;
+			font-size: 12px;
+			text-align: center;
+			line-height: 40px;
+		}	
+	</style>
+
+	<script type="text/javascript" src='jquery.js'></script>
+
+	<script type="text/javascript" src="jquery.lazyload.min.js"></script>
+
+</head>
+
+<body>
+	<a href=""><img src="images/youhui.png" alt="" id="youhui"></a>
+	<div id="head">
+		<div id="menu">
+			<a href="../../半糖首页/首页.html" class="float" id="logo"><img src="images/logo.png" alt=""></a>
+			<a href="../../半糖首页/首页.html" class="float">首页</a>
+			<a href="" class="float" id="two">发现</a>
+			<a href="../../半糖首页/好物.html" class="float">好物</a>
+			<a href="../../home/home.html" class="float">优惠券</a>
+			<img src="images/bg1.png" alt="" id="bg1">
+		</div>
+		<div id="right">
+			<input type="text" placeholder ='搜索你想要的'>
+			<a href=""><img src="images/sousuo.gif" alt=""></a>
+		</div>
+	</div>
+	<div id="main">
+		<div id="left">
+			<div id="left1" class="left">发现</div>
+			<div id="left2" class="left">文章</div>
+		</div>
+		<div id="main-right">
+			<ul>
+			</ul>
+		</div>
+	</div>
+	<div id = 'footer1'>
+		<ul>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">加入我们</a></li>
+			<li><a href="">联系我们</a></li>
+			<li><a href="">商务合作</a></li>
+		</ul>
+		<ul>
+			<li><a href="">用户反馈</a></li>
+			<li><a href="">投稿</a></li>
+			<li><a href="">关注我们</a></li>
+		</ul>
+		<div id = "footright">
+			<img src="images/erweima.png" alt="" id="erweima">
+			<ul>
+				<li style="font-size: 32px">半糖</li>
+				<li style="font-size: 15px">发现值得买的好东西</li>
+				<li style="font-size: 12px">省钱优惠券</li>
+			</ul>
+		</div>
+	</div>
+	<div id = 'footer2'>地址：北京市东城区箭厂胡同 · 京ICP备14040010号-5 · 半糖 · 发现值得买的好东西</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	$.ajax({
+		url: 'http://10.0.157.237:8888/faxian?pageNum=1&pageSize=5',
+		type: 'get',
+		dataType: 'json',
+		cache: false,
+		success: function (data) {
+
+			zhangtian(data);
+
+			lazy_a();
+
+		}
+	})
+
+	function zhangtian (data) {
+		var ul = $('ul');
+
+		var str = '';
+
+		for (var temp of data.shop_data) {
+			var str2 = "http://www.ibantang.com/topic/" + temp.id;
+			str += `<li>
+				<h3><a href=${str2}>${temp.title}</a></h3>
+				<a href=${str2}><img src='1.gif' data-original='${temp.pics[0].url}' class="lazy">
+				<p>${temp.desc}</p></a>
+				<div class='liulan'>
+				<a href=""><img src='images/tubiao1.gif' class="tubiao1"></a>
+				<span>${temp.views}</span>
+				<a href=""><img src='images/tubiao2.gif' class="tubiao2"></a>
+				<span>${temp.praises}</span>
+				</div>
+			</li>`
+		}
+
+		$(str).appendTo('ul:eq(0)');
+	}
+
+	function lazy_a(lan) {
+      $(function() {
+
+          $("img.lazy").lazyload({
+            placeholder : "1.gif",
+            threshold : 200,
+            event : "click",
+            effect : "fadeIn"
+          });
+      })
+    }
+
+
+</script>
+
+<script type="text/javascript">
+	var ScollN =1;
+
+      $(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '300' && ScollN == 1) {
+          ScollN++;
+          // console.log(`http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=2&pageSize=8`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/faxian?pageNum=2&pageSize=5`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+              zhangtian_1(data);
+              lazy_a();
+            }
+          });
+        }
+      })
+
+      $(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '1000' && ScollN == 2) {
+          ScollN++;
+          // console.log(`http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=2&pageSize=8`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/faxian?pageNum=3&pageSize=5`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+              zhangtian_1(data);
+              lazy_a();
+            }
+          });
+        }
+      })
+
+      $(window).scroll(function () {
+        var lastTop = $(this).scrollTop();
+        if (parseInt(lastTop) > '1800' && ScollN == 3) {
+          ScollN++;
+          // console.log(`http://10.0.157.237:8888/${zhangtianmeinaozi}?pageNum=2&pageSize=8`);
+          $.ajax({
+            url: `http:/\/10.0.157.237:8888/faxian?pageNum=4&pageSize=5`,
+            type: 'get',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+              console.log(data);
+              zhangtian_1(data);
+              lazy_a();
+            }
+          });
+        }
+      })
+
+
+    function zhangtian_1 (data) {
+		var ul = $('ul');
+
+		var str = '';
+
+		for (var temp of data.shop_data) {
+			var str2 = "http://www.ibantang.com/topic/" + temp.id;
+			str += `<li>
+				<h3><a href=${str2}>${temp.title}</a></h3>
+				<a href=${str2}><img src='1.gif' data-original='${temp.pics[0].url}' class="lazy">
+				<p>${temp.desc}</p></a>
+				<div class='liulan'>
+				<a href=""><img src='images/tubiao1.gif' class="tubiao1"></a>
+				<span>${temp.views}</span>
+				<a href=""><img src='images/tubiao2.gif' class="tubiao2"></a>
+				<span>${temp.praises}</span>
+				</div>
+			</li>`
+		}
+
+		$(str).appendTo('ul:eq(0)');
+	}
+</script>
+
+</html>

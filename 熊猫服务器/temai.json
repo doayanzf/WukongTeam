@@ -1,0 +1,1030 @@
+{
+    "status_code": 1,
+    "message": "请求成功",
+    "timestamp": 1515066346,
+    "data": {
+        "activity_count": 56,
+        "activity_list": [
+            {
+                "activity_id": 1048,
+                "title": "良品铺子旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "大礼包第2件1元",
+                "coupon_count": 36,
+                "coupon_list": [
+                    {
+                        "coupon_id": 13789932,
+                        "title": "良品铺子 坚果大礼包 5袋",
+                        "zk_price": "39.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i2/619123122/TB1AcTjheEJL1JjSZFGXXa6OXXa_!!0-item_pic.jpg_400x400",
+                        "discount": "5",
+                        "product_type": "2",
+                        "description": "聚划算 第二件1元",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 5188257,
+                        "title": "良品铺子 靖江猪肉脯",
+                        "zk_price": "15.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i2/619123122/TB2WVmmvHBkpuFjy1zkXXbSpFXa_!!619123122.jpg_400x400",
+                        "discount": "4.5",
+                        "product_type": "2",
+                        "description": "内含约13小包",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 5302032,
+                        "title": "芒果干蜜饯3袋",
+                        "zk_price": "27.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i2/619123122/TB2fQUTsmxjpuFjSszeXXaeMVXa_!!619123122.jpg_400x400",
+                        "discount": "5.1",
+                        "product_type": "2",
+                        "description": "原价55元，7.9元/包",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    }
+                ],
+                "brand_logo": "http://omqxp8we2.bkt.clouddn.com/brand/2017/07/19/85358596f4274e894e",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1165,
+                "title": "蓝漂品牌特卖",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "纸巾低至1.1元/包",
+                "coupon_count": 20,
+                "coupon_list": [
+                    {
+                        "coupon_id": 12354742,
+                        "title": "蓝漂 本色抽纸 18包",
+                        "zk_price": "19.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/4/_1515048395803258634_400x400",
+                        "discount": "6.7",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    },
+                    {
+                        "coupon_id": 1022745,
+                        "title": "竹浆卫生纸 36卷",
+                        "zk_price": "34.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/4/_1515048428844194945_400x400",
+                        "discount": "6.4",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 20
+                        }
+                    },
+                    {
+                        "coupon_id": 5417781,
+                        "title": "抽取面巾纸 15包",
+                        "zk_price": "29.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/4/_1515048456782703288_400x400",
+                        "discount": "7.5",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2017/11/23/406045a1646ec2aee7.jpg",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 629,
+                "title": "小迷糊旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "买2件送21片面膜",
+                "coupon_count": 48,
+                "coupon_list": [
+                    {
+                        "coupon_id": 1042902,
+                        "title": "小迷糊 黑面膜21片",
+                        "zk_price": "59.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2017/11/11/_1510381656264624425_400x400",
+                        "discount": "2.5",
+                        "product_type": "2",
+                        "description": "第3件0元",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 1221495,
+                        "title": "玻尿酸护肤3件套",
+                        "zk_price": "99.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2017/12/7/_1512630432468405658_400x400",
+                        "discount": "3.8",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 13898809,
+                        "title": "嫩白亮颜面膜",
+                        "zk_price": "79.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2017/12/7/_1512630489156016221_400x400",
+                        "discount": "2.9",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    }
+                ],
+                "brand_logo": "http://omqxp8we2.bkt.clouddn.com/brand/2017/08/24/73092599e94b0bb096",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1177,
+                "title": "阿道夫洗护品牌特卖",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "买洗发水送吹风机",
+                "coupon_count": 28,
+                "coupon_list": [
+                    {
+                        "coupon_id": 5108519,
+                        "title": "阿道夫 洗护套装",
+                        "zk_price": "58",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/3/_1514971842164036165_400x400",
+                        "discount": "7.4",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 20
+                        }
+                    },
+                    {
+                        "coupon_id": 14482650,
+                        "title": "阿道夫洗发水 2瓶",
+                        "zk_price": "66",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514881468841259463_400x400",
+                        "discount": "7.7",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 20
+                        }
+                    },
+                    {
+                        "coupon_id": 1437169,
+                        "title": "阿道夫 洗发水 2瓶",
+                        "zk_price": "58",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514881544918320005_400x400",
+                        "discount": "7.4",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 20
+                        }
+                    }
+                ],
+                "brand_logo": "http://omqxp8we2.bkt.clouddn.com/brand/2017/08/03/390435982e3462252a",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1110,
+                "title": "三只松鼠旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "抢爆款第2份5折",
+                "coupon_count": 48,
+                "coupon_list": [
+                    {
+                        "coupon_id": 17800465,
+                        "title": "三只松鼠 网红吃货零食大礼包 5袋",
+                        "zk_price": "39.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i3/880734502/TB2XEhAdJHO8KJjSZFtXXchfXXa_!!880734502.jpg_400x400",
+                        "discount": "3.6",
+                        "product_type": "2",
+                        "description": "再减10元！拍下仅29.9元",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 16647951,
+                        "title": "三只松鼠 休闲芒果干 3袋",
+                        "zk_price": "27.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2017/12/5/_1512442306704839985_400x400",
+                        "discount": "4",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 16648561,
+                        "title": "三只松鼠 零食大礼包",
+                        "zk_price": "49.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i3/880734502/TB12IYogX9gSKJjSspbXXbeNXXa_!!0-item_pic.jpg_400x400",
+                        "discount": "4.3",
+                        "product_type": "2",
+                        "description": "第二份39.9元",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2017/10/24/3584359eed8a034850.jpeg",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1170,
+                "title": "bynanda化妆品旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "果冻口红第3支0元",
+                "coupon_count": 36,
+                "coupon_list": [
+                    {
+                        "coupon_id": 2335653,
+                        "title": "变色果冻口红",
+                        "zk_price": "9.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i4/3103011205/TB2IeJskHYI8KJjy0FaXXbAiVXa_!!3103011205.jpg_400x400",
+                        "discount": "5",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    },
+                    {
+                        "coupon_id": 2317579,
+                        "title": "焕彩隔离霜",
+                        "zk_price": "19.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i1/3103011205/TB2Y1QUctbJ8KJjy1zjXXaqapXa_!!3103011205.jpg_400x400",
+                        "discount": "3.4",
+                        "product_type": "2",
+                        "description": "清透裸妆 隔离外界伤害",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 1286438,
+                        "title": "懒人印章眉粉",
+                        "zk_price": "12.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2017/12/12/_1513051340224616089_400x400",
+                        "discount": "5.6",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2017/12/12/537485a2f5320c951e.jpeg",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1176,
+                "title": "美的电器品牌特卖",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "买电磁炉送锅具套装",
+                "coupon_count": 33,
+                "coupon_list": [
+                    {
+                        "coupon_id": 17344895,
+                        "title": "防烫电热水壶",
+                        "zk_price": "79",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2017/12/13/_1513154696494265012_400x400",
+                        "discount": "8.9",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 1062180,
+                        "title": "美的 电压力锅",
+                        "zk_price": "249",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514880958738833929_400x400",
+                        "discount": "8.3",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 50
+                        }
+                    },
+                    {
+                        "coupon_id": 1057919,
+                        "title": "美的 电磁炉",
+                        "zk_price": "229",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2017/12/13/_1513154645600514151_400x400",
+                        "discount": "5",
+                        "product_type": "2",
+                        "description": "送锅具刀具套装",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    }
+                ],
+                "brand_logo": "http://omqxp8we2.bkt.clouddn.com/brand/2017/07/21/922145971e680cd093",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1178,
+                "title": "蓉李记旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "",
+                "coupon_count": 17,
+                "coupon_list": [
+                    {
+                        "coupon_id": 12951410,
+                        "title": "懒人速食小火锅",
+                        "zk_price": "16.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514883081906985105_400x400",
+                        "discount": "6.3",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    },
+                    {
+                        "coupon_id": 12365374,
+                        "title": "重庆麻辣佐料",
+                        "zk_price": "11.8",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i4/3299252072/TB2UMruuypnpuFjSZFIXXXh2VXa_!!3299252072.jpg_400x400",
+                        "discount": "4.7",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 11988787,
+                        "title": "四川烟熏腊肠",
+                        "zk_price": "29.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i2/3299252072/TB2FcUkbMDD8KJjy0FdXXcjvXXa_!!3299252072.jpg_400x400",
+                        "discount": "7.5",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2018/01/02/755175a4b45a9b85eb.jpeg",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1173,
+                "title": "芬腾内衣品牌特卖",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "指定款5折抢购",
+                "coupon_count": 33,
+                "coupon_list": [
+                    {
+                        "coupon_id": 19586754,
+                        "title": "甜美蕾丝内衣套装",
+                        "zk_price": "98",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514880998085479058_400x400",
+                        "discount": "2",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 14263384,
+                        "title": "情侣睡衣两件套",
+                        "zk_price": "99",
+                        "thumbnail_pic": "http://gaitaobao2.alicdn.com/tfscom/i2/TB1q_AVLXXXXXaQXVXXXXXXXXXX_!!0-item_pic.jpg_400x400",
+                        "discount": "1.9",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 1534065,
+                        "title": "全棉休闲家居服",
+                        "zk_price": "119",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514881030656208835_400x400",
+                        "discount": "2.3",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    }
+                ],
+                "brand_logo": "http://omqxp8we2.bkt.clouddn.com/brand/2017/07/24/187075975bed7908ed",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1184,
+                "title": "诗慕旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "小橙子2元/斤",
+                "coupon_count": 10,
+                "coupon_list": [
+                    {
+                        "coupon_id": 18019521,
+                        "title": "湖南麻阳冰糖橙5斤",
+                        "zk_price": "11.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i1/3097368096/TB2VcfIfCYH8KJjSspdXXcRgVXa_!!3097368096.jpg_400x400",
+                        "discount": "1.5",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 15408773,
+                        "title": "红心猕猴桃30个",
+                        "zk_price": "49.8",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/3/_1514949069747300254_400x400",
+                        "discount": "3.9",
+                        "product_type": "2",
+                        "description": "买1送1",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 19530775,
+                        "title": "黄心猕猴桃5斤",
+                        "zk_price": "25.8",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i3/3097368096/TB25mPHiWagSKJjy0FhXXcrbFXa_!!3097368096.jpg_400x400",
+                        "discount": "3.4",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2018/01/02/901645a4b57141e6bc.jpg",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1182,
+                "title": "斯泊恩运动用品专场",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "最高领60元优惠券",
+                "coupon_count": 12,
+                "coupon_list": [
+                    {
+                        "coupon_id": 17652439,
+                        "title": "抖抖甩脂机",
+                        "zk_price": "39",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514884397442763341_400x400",
+                        "discount": "3.9",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 60
+                        }
+                    },
+                    {
+                        "coupon_id": 11279114,
+                        "title": "瑜伽服套装",
+                        "zk_price": "113",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/4/_1515035009519482315_400x400",
+                        "discount": "8.8",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 15
+                        }
+                    },
+                    {
+                        "coupon_id": 19354695,
+                        "title": "懒人甩脂机",
+                        "zk_price": "298",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/4/_1515035299639440447_400x400",
+                        "discount": "8.3",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 60
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2018/01/04/918905a4d988f51d2e.jpg",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1167,
+                "title": "世宣旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "",
+                "coupon_count": 38,
+                "coupon_list": [
+                    {
+                        "coupon_id": 17107449,
+                        "title": "纯银花朵耳钉",
+                        "zk_price": "14.9",
+                        "thumbnail_pic": "http://gaitaobao2.alicdn.com/tfscom/i4/3073919147/TB1WorvfgMPMeJjy1XcXXXpppXa_!!0-item_pic.jpg_400x400",
+                        "discount": "7.5",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 5
+                        }
+                    },
+                    {
+                        "coupon_id": 17826384,
+                        "title": "长款毛衣项链",
+                        "zk_price": "7.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i4/3073919147/TB2Bo9Pe26H8KJjSspmXXb2WXXa_!!3073919147.jpg_400x400",
+                        "discount": "6.1",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 5
+                        }
+                    },
+                    {
+                        "coupon_id": 19369516,
+                        "title": "气质简约耳钉",
+                        "zk_price": "13.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i1/3073919147/TB2YTpBjBDH8KJjy1zeXXXjepXa_!!3073919147.jpg_400x400",
+                        "discount": "8.2",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 3
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2017/11/28/213025a1d026ba83bc.jpeg",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1183,
+                "title": "波特豆旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "全场低至4折起",
+                "coupon_count": 27,
+                "coupon_list": [
+                    {
+                        "coupon_id": 15674064,
+                        "title": "婴儿软底学步鞋子",
+                        "zk_price": "9.8",
+                        "thumbnail_pic": "http://gaitaobao4.alicdn.com/tfscom/i2/2979101598/TB1KMvUeoEIL1JjSZFFXXc5kVXa_!!0-item_pic.jpg_400x400",
+                        "discount": "4",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 15
+                        }
+                    },
+                    {
+                        "coupon_id": 18522555,
+                        "title": "软底防掉婴儿鞋",
+                        "zk_price": "19.8",
+                        "thumbnail_pic": "http://gaitaobao1.alicdn.com/tfscom/i3/2979101598/TB1dvhwhSYH8KJjSspdXXcRgVXa_!!0-item_pic.jpg_400x400",
+                        "discount": "5.7",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 15
+                        }
+                    },
+                    {
+                        "coupon_id": 15926514,
+                        "title": "保暖加厚婴儿棉鞋",
+                        "zk_price": "19.8",
+                        "thumbnail_pic": "http://gaitaobao1.alicdn.com/tfscom/i1/2979101598/TB1FFOtaYwTMeJjSszfXXXbtFXa_!!0-item_pic.jpg_400x400",
+                        "discount": "5.7",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 15
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2018/01/02/583355a4b50866f013.jpg",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1169,
+                "title": "赤豪食品旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "买牛排送刀叉",
+                "coupon_count": 17,
+                "coupon_list": [
+                    {
+                        "coupon_id": 16910641,
+                        "title": "家庭牛排10片装",
+                        "zk_price": "78",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i3/1611893164/TB2xUtykjuhSKJjSspdXXc11XXa_!!1611893164.jpg_400x400",
+                        "discount": "7.2",
+                        "product_type": "1",
+                        "description": "送刀叉2副",
+                        "ticket": {
+                            "coupon_price": 30
+                        }
+                    },
+                    {
+                        "coupon_id": 1986583,
+                        "title": "和牛M7级牛排",
+                        "zk_price": "158",
+                        "thumbnail_pic": "http://gaitaobao4.alicdn.com/tfscom/i4/TB1psFkPVXXXXbtaXXXXXXXXXXX_!!0-item_pic.jpg_400x400",
+                        "discount": "8",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 40
+                        }
+                    },
+                    {
+                        "coupon_id": 2199211,
+                        "title": "菲力牛排 10片",
+                        "zk_price": "119",
+                        "thumbnail_pic": "http://gaitaobao1.alicdn.com/tfscom/i2/TB1g5CrPXXXXXa9apXXXXXXXXXX_!!0-item_pic.jpg_400x400",
+                        "discount": "7.5",
+                        "product_type": "1",
+                        "description": "1500g",
+                        "ticket": {
+                            "coupon_price": 40
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2018/01/02/280555a4b3875baa08.jpg",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1181,
+                "title": "乐及旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "全场低至3折起",
+                "coupon_count": 12,
+                "coupon_list": [
+                    {
+                        "coupon_id": 19498139,
+                        "title": "电子烟油 30ml",
+                        "zk_price": "19",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514883990207115032_400x400",
+                        "discount": "3.9",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 30
+                        }
+                    },
+                    {
+                        "coupon_id": 19364788,
+                        "title": "大烟雾电子烟套装",
+                        "zk_price": "168",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514884153134655313_400x400",
+                        "discount": "8.5",
+                        "product_type": "1",
+                        "description": "80W",
+                        "ticket": {
+                            "coupon_price": 30
+                        }
+                    },
+                    {
+                        "coupon_id": 19109914,
+                        "title": "水果味烟油 60ml",
+                        "zk_price": "128",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/4/_1515034194532033788_400x400",
+                        "discount": "8.1",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 30
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2018/01/02/817685a4b494219830.jpg",
+                "is_new": true,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1168,
+                "title": "思尚旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "魅色口红第2支5元",
+                "coupon_count": 19,
+                "coupon_list": [
+                    {
+                        "coupon_id": 5942599,
+                        "title": "思尚 哑光咬唇唇膏",
+                        "zk_price": "25",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514879318828906133_400x400",
+                        "discount": "7.1",
+                        "product_type": "1",
+                        "description": "正参加淘抢购",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    },
+                    {
+                        "coupon_id": 12406938,
+                        "title": "双头V脸修容棒",
+                        "zk_price": "29",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514879345285609334_400x400",
+                        "discount": "7.4",
+                        "product_type": "1",
+                        "description": "买1送1",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    },
+                    {
+                        "coupon_id": 5942595,
+                        "title": "自然细腻腮红",
+                        "zk_price": "29",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514879399255534478_400x400",
+                        "discount": "7.4",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2018/01/02/252505a4b3650098bb.jpg",
+                "is_new": false,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1171,
+                "title": "初昀女鞋品牌特卖",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "",
+                "coupon_count": 33,
+                "coupon_list": [
+                    {
+                        "coupon_id": 17397110,
+                        "title": "秋冬季加绒加厚雪地靴",
+                        "zk_price": "29.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/4/_1515048785788943414_400x400",
+                        "discount": "1.9",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 17397105,
+                        "title": "加绒保暖马丁靴",
+                        "zk_price": "29.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i4/919718168/TB2M4_fahoa61Bjy0FaXXcHwpXa_!!919718168.jpg_400x400",
+                        "discount": "1.9",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 17397068,
+                        "title": "平底加绒雪地靴",
+                        "zk_price": "29.9",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i1/TB1S1aHJVXXXXaOXXXXXXXXXXXX_!!0-item_pic.jpg_400x400",
+                        "discount": "1.4",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2017/12/12/278585a2f87f00191e.jpeg",
+                "is_new": false,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1172,
+                "title": "美颜坊旗舰店",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "领百元大额优惠券",
+                "coupon_count": 10,
+                "coupon_list": [
+                    {
+                        "coupon_id": 13709496,
+                        "title": "不晕眼线笔",
+                        "zk_price": "9.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514879994548205326_400x400",
+                        "discount": "2.5",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 30
+                        }
+                    },
+                    {
+                        "coupon_id": 16651811,
+                        "title": "滋养调理面膜",
+                        "zk_price": "14.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514879929580452385_400x400",
+                        "discount": "1.2",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 110
+                        }
+                    },
+                    {
+                        "coupon_id": 17446364,
+                        "title": "不沾杯唇霜",
+                        "zk_price": "9.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/2/_1514879959028664915_400x400",
+                        "discount": "1.4",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 60
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2018/01/02/496065a4b3bc289901.jpg",
+                "is_new": false,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1175,
+                "title": "七街皇后假发专场",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "领10元无限制代金券",
+                "coupon_count": 15,
+                "coupon_list": [
+                    {
+                        "coupon_id": 18951907,
+                        "title": "U型半头套长直发",
+                        "zk_price": "39",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i2/2788248689/TB2tWtwhxrI8KJjy0FpXXb5hVXa_!!2788248689.jpg_400x400",
+                        "discount": "8",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    },
+                    {
+                        "coupon_id": 18897079,
+                        "title": "隐形无痕微卷假发",
+                        "zk_price": "39",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i1/2788248689/TB2A.MdcBLN8KJjSZFpXXbZaVXa_!!2788248689.jpg_400x400",
+                        "discount": "8",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    },
+                    {
+                        "coupon_id": 19547465,
+                        "title": "空气刘海无痕假发",
+                        "zk_price": "49",
+                        "thumbnail_pic": "http://img.alicdn.com/imgextra/i2/2788248689/TB2bJAsjtnJ8KJjSszdXXaxuFXa_!!2788248689.jpg_400x400",
+                        "discount": "8.3",
+                        "product_type": "1",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 10
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2018/01/02/984235a4b3c28d63b7.jpg",
+                "is_new": false,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            },
+            {
+                "activity_id": 1164,
+                "title": "艾爵美瞳专场",
+                "description": "",
+                "page_type": 5,
+                "subtitle": "全场低至3折起",
+                "coupon_count": 9,
+                "coupon_list": [
+                    {
+                        "coupon_id": 15264942,
+                        "title": "自然美瞳年抛2片",
+                        "zk_price": "19.9",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/4/_1515050401455715546_400x400",
+                        "discount": "4",
+                        "product_type": "1",
+                        "description": "买2减40送2",
+                        "ticket": {
+                            "coupon_price": 30
+                        }
+                    },
+                    {
+                        "coupon_id": 15247918,
+                        "title": "美瞳半年抛1片",
+                        "zk_price": "22",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/4/_1515050718963265224_400x400",
+                        "discount": "1.5",
+                        "product_type": "2",
+                        "description": "买2送2",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    },
+                    {
+                        "coupon_id": 2957514,
+                        "title": "蕾丝美瞳2片",
+                        "zk_price": "25",
+                        "thumbnail_pic": "http://file.17gwx.com/sqkb/coupon/2018/1/4/_1515050763092407125_400x400",
+                        "discount": "2.1",
+                        "product_type": "2",
+                        "description": "",
+                        "ticket": {
+                            "coupon_price": 0
+                        }
+                    }
+                ],
+                "brand_logo": "http://file.17gwx.com/sqkb/brand/2018/01/02/388565a4b384d621cf.jpeg",
+                "is_new": false,
+                "pic2": "",
+                "pic2_width": 0,
+                "pic2_height": 0
+            }
+        ]
+    }
+}
