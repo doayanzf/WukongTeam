@@ -46,3 +46,8 @@
   		}, 'slow');
   	});
   })
+
+
+  $('.deng').click(function () {
+      $('.htmleaf-container').toggle();
+  })

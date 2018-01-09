@@ -204,6 +204,33 @@
     <link rel="stylesheet" href="../home/css/header.css">
     <link rel="stylesheet" href="../home/css/reset.css">
     <script src="jquery.lazyload.min.js" charset="utf-8"></script>
+    <style media="screen">
+      #deng2{
+        width: 120%;
+        height: 100%;
+        position: absolute;
+        z-index: 3;
+        top: 5px;;
+        right: 15px;
+        right: -5px;
+      }
+      .deng{
+        z-index: 4;
+
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        top: 5px;;
+        right: 15px;
+        border-radius: 50%;
+        background: skyblue;
+        color: white;
+
+      }
+      #deng2{
+        display: none;
+      }
+    </style>
 
 </head>
 
@@ -321,8 +348,16 @@
         </div>
     </div>
     <iframe src="../home/footer.html " id="ifram2" width="100%" height="155" frameborder="0" scrolling="no"></iframe>
+    <!-- 登录按钮 -->
+    <button class="deng" type="button" name="button">登录</button>
+    <iframe src="../home/deng.html " id="deng2" width="100%" height="155" frameborder="0" scrolling="no"></iframe>
 
 </body>
+<script type="text/javascript">
+    $('.deng').click(function () {
+        $('#deng2').toggle();
+    })
+</script>
 <script type="text/javascript">
     var ScollN = 1;
     var zhangtianmeinaozi = 'ph_zongbang';
